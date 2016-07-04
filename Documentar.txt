@@ -1,0 +1,21 @@
+Documentar
+
+Clase Widget:
+
+Implementar, documentar, liberar
+
+X	Widget.onEnter
+X	Widget.onLeave
+-	Widget.onMotion
+-	Widget.onKeyDown
+-	Widget.onKeyUp
+-	Widget.onRightUp
+-	Widget.onRightDown
+-	Widget.onRightDoubleClick
+-	Widget.onLeftUp
+-	Widget.onLeftDown
+-	Widget.onLeftDoubleClick
+-	Widget.onMiddleUp
+-	Widget.onMiddleDown
+-	Widget.onMiddleDoubleClick
+-	Widget.onMouseWheel
