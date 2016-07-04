@@ -1,13 +1,13 @@
-Clases en Lide
-==============
+Classes in Lide
+===============
 
 A modo de tutorial, en este documento trataré de explicar en qué consiste la programación orientada a objetos en Lide y las adaptaciones que se hicieron en el lenguaje base (Lua) para que el programador pueda diseñar e implementar sus propias clases o incluso modificar aspectos del framework Lide.
 
 Dentro del mundo de LUA encontramos diferentes implementaciones/adaptaciones de programación orientada a objetos, unos son proyectos conformados y otros son simples scripts que nos ayudan a interactuar con clases, subclases, métodos y propiedades dentro del lenguaje de programación.
 Por diversos motivos decidimos adoptar una librería pequeña pero altamente customizable y escalable que se adapta a nuestras necesidades como proyecto, dicha implementación fue llamada `yaci.lua <http://lua-users.org/wiki/YetAnotherClassImplementation>`_ (por `Julien Patte <https://github.com/jpatte>`_) la incluimos dentro del core e hicimos algunas modificaciones menores para que se adecuara a lo que nosotros queríamos.
 
-Creación de una clase:
-**********************
+Making a class:
+***************
 
 Básicamente hay dos formas de definir una nueva clase:
 
@@ -60,7 +60,7 @@ La forma de definir nuestros constructores es la siguiente:
 
   Nótese que ``Object:init()`` existe sin embargo, se recomienda nunca usarlo.
 
-Métodos
+Methods
 +++++++
 
 Los métodos pueden ser definidos de una manera muy sencilla:
@@ -74,7 +74,7 @@ Los métodos pueden ser definidos de una manera muy sencilla:
       print(“Leyendo: ”..libro)
   end
 
-Eventos lua (meta-métodos)
+Lua events (meta-methods)
 ++++++++++++++++++++++++++
 
 No confundir éstos eventos con la *clase Event*, éstos eventos corresponden a las interacciones entre los objetos dentro del lenguaje de programación, algunos de éstos pueden ser: ``__tostring``, ``__add``, ``__eq``.
@@ -97,7 +97,7 @@ Cualquier evento puede ser usado, exceptuando ``__index`` y ``__newindex`` los c
 Usted puede usar esta característica para definir operadores como: ``__add``, ``__eq``, etc. ``__tostring`` es un evento realmente útil, la clase :ref:`Object<ClassObject>` implementa una versión estándar para ella que simplemente retorna "a xxx" donde 'xxx' es el nombre de la clase de dicha instancia.
 
 
-Instanciación
+Instantiation
 +++++++++++++
 
 Toda clase tiene el método ``new()``, usado para la instanciación. Todos los argumentos que pasemos a éste métodos son pasados al constructor:
@@ -115,8 +115,8 @@ El resultado es el mismo que si usted “llama” las clases directamente:
   Jefferson = Ingeniero (“Jefferson”, 23, “Sistemas”)
 
 
-Métodos de las clases
-+++++++++++++++++++++
+Classes methods
++++++++++++++++
 
 Así como ``subclass()`` y ``new()``, las clases tienen algunos otros métodos:
 
@@ -135,11 +135,11 @@ Así como ``subclass()`` y ``new()``, las clases tienen algunos otros métodos:
 * ``cast()`` & ``trycast()`` son usados para casting. Ver abajo para más detalles.
 
 
-Ejecución
-*********
+Running
+*******
 
-Métodos de las instancias
-+++++++++++++++++++++++++
+Intance's methods
++++++++++++++++++
 
 Todas las instancias permiten accesar a las variables definidas en el constructor de su clase (y de sus superclases). Ellos también tienen un método ``class()`` que retorna la clase, y un campo ``super`` que es usado para acceder a la superclase por si usted sobrescribió el método, veamos:
 
@@ -162,8 +162,8 @@ Todas las instancias permiten accesar a las variables definidas en el constructo
 
 Los miembros de la superclase son creados (e inicializados) cuando el método ``self.super:init()`` es llamado. Usted generalmente debe llamar este método al principio del constructor para inicializarlo. Nótese que b es una instancia de ``B``, ``b.super`` es simplemente una instancia de ``A`` (entonces tenga cuidado, aquí ``super`` es dinámico, no estático).
 
-Variables estáticas
-+++++++++++++++++++
+Static variables
+++++++++++++++++
 
 Cada vez que usted define un nuevo método para una clase, éste es registrado en una tabla ``static``; de esta manera nosotros no vamos a mezclar los métodos de las clases con los servicios de las clases. Ésta tabla es accesible mediante el campo ``static``. Esto generalmente permite acceso a variables estáticas en las clases, por ejemplo:
 
@@ -236,7 +236,7 @@ Aquí un ejemplo:
   myA:test() -- but will raise an error here
 
 
-Atributos privados
+Private attributes
 ++++++++++++++++++
 
 Por defecto, las subclases heredan todos los métodos y todos los atributos definidos por su(s) clase(s) padre. Esto puede llevar a algunas confusiones cuando definimos atributos que comparten el mismo nombre en diferentes niveles en la jerarquía:

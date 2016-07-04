@@ -1,10 +1,10 @@
-Bienvenido
-==========
+Welcome
+=======
 
 Lide Framework es una librería que le permite crear interfaces gráficas multiplataforma desde el lenguaje Lua. Lide utiliza wxWidgets para construir los controles y las ventanas, ésto asegura la integración de sus aplicaciones con GTK+ en Linux y controles realmente nativos en Windows.
 
 
-Instalación
+Installation
 ============
 
 * Asegurese de tener instalado el interprete de lua5.1 en su máquina.
