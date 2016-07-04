@@ -2,19 +2,19 @@
 
 .. toctree::
 	:hidden:
-	:caption: Empezando con Lide
+	:caption: Getting started
 	
 	./welcome
 
 .. toctree::
 	:hidden:
-	:caption: Modelo de OOP
+	:caption: OOP Model
 
 	./oop-intro
 
 .. toctree::
 	:hidden:
-	:caption: Referencia de la API
+	:caption: API Reference
 
 	./types
 	./classes
