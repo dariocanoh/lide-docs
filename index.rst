@@ -11,7 +11,8 @@
 	:caption: Modelo de OOP
 
 	./oop-intro
-
+	./access_modifiers
+	
 .. toctree::
 	:hidden:
 	:caption: Referencia de la API
