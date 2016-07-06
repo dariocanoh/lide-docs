@@ -11,6 +11,7 @@
 	:caption: OOP Model
 
 	./oop-intro
+	./access_modifiers
 
 .. toctree::
 	:hidden:
