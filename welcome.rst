@@ -30,7 +30,7 @@ Installation
 How to use it
 =============
 
-* Create a file `` main.lua`` where you start the application.
+* Create a file ``main.lua`` where you start the application.
 
 .. code-block:: lua
 	:linenos:
