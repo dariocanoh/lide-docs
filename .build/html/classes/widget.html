@@ -1,0 +1,647 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Widget &mdash; Lide SDK 0.0.01 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Lide SDK 0.0.01 documentation" href="../index.html"/>
+        <link rel="up" title="Classes" href="../classes.html"/>
+        <link rel="next" title="Window" href="window.html"/>
+        <link rel="prev" title="Object" href="object.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Lide SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.01
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../welcome.html">Welcome</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../welcome.html#installation">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../welcome.html#how-to-use-it">How to use it</a></li>
+</ul>
+<p class="caption"><span class="caption-text">OOP Model</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../oop-intro.html">Class reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../access_modifiers.html">Encapsulación y modificadores de acceso</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../types.html">Types</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../classes.html">Classes</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="object.html">Object</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Widget</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#constructor">Constructor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#arguments">Arguments</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#inherited-methods">Inherited Methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#class-methods">Class Methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#widget-getwxobj">Widget:getwxObj</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#widget-getparent">Widget:getParent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#widget-getwidgettype">Widget:getWidgetType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#widget-setwidgettype">Widget:setWidgetType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#widget-getposx">Widget:getPosX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#widget-setposx">Widget:setPosX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#widget-getposy">Widget:getPosY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#widget-setposy">Widget:setPosY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#widget-getwidth">Widget:getWidth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#widget-setwidth">Widget:setWidth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#widget-getheight">Widget:getHeight</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#widget-setheight">Widget:setHeight</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#widget-getvisible">Widget:getVisible</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#widget-setvisible">Widget:setVisible</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#widget-getenabled">Widget:getEnabled</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#widget-setenabled">Widget:setEnabled</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#class-events">Class Events</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="window.html">Window</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form.html">Form</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form.html#types">Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="control.html">Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="button.html">Button</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Lide SDK</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../classes.html">Classes</a> &raquo;</li>
+      
+    <li>Widget</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/classes/widget.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="widget">
+<span id="classwidget"></span><h1>Widget<a class="headerlink" href="#widget" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Widget is derived from <a class="reference internal" href="object.html#classobject"><span class="std std-ref">Object class</span></a>.</p>
+</div>
+<p>Widget is the base class for all windows and represents any visible object on screen. All controls,
+top level windows and so on are widgets.</p>
+<p>Widget can be used for construct your own classes derived from it. For example a new kind of Window
+or Dialog. Otherwise you are not exploit all the pottential of lide classes.</p>
+<hr class="docutils" />
+<div class="section" id="constructor">
+<h2>Constructor<a class="headerlink" href="#constructor" title="Permalink to this headline">¶</a></h2>
+<p>Widget class has a single constructor:</p>
+<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="n">object</span> <span class="nl">Widget</span><span class="p">:</span><span class="k">new</span> <span class="p">(</span> <span class="n">string</span> <span class="n">sWidgetName</span><span class="p">,</span> <span class="n">string</span> <span class="n">sWidgetType</span><span class="p">,</span> <span class="n">number</span> <span class="n">nPosX</span><span class="p">,</span> <span class="n">number</span> <span class="n">nPosY</span><span class="p">,</span> <span class="n">number</span> <span class="n">nWidth</span><span class="p">,</span> <span class="n">number</span> <span class="n">nHeight</span><span class="p">,</span> <span class="n">number</span> <span class="n">nID</span> <span class="p">)</span>
+</pre></div>
+</div>
+<div class="section" id="arguments">
+<h3>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h3>
+<p>These arguments are received by class constructor.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="12%" />
+<col width="88%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Argument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>sWidgetName</td>
+<td>The widget name</td>
+</tr>
+<tr class="row-odd"><td>sWidgetType</td>
+<td>The widget type identificator</td>
+</tr>
+<tr class="row-even"><td>nPosX</td>
+<td>Position related to X</td>
+</tr>
+<tr class="row-odd"><td>nPosY</td>
+<td>Position related to Y</td>
+</tr>
+<tr class="row-even"><td>nWidth</td>
+<td>Width of the widget</td>
+</tr>
+<tr class="row-odd"><td>nHeight</td>
+<td>Height of the widget</td>
+</tr>
+<tr class="row-even"><td>nID</td>
+<td>Widget&#8217;s identificator</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="inherited-methods">
+<h2>Inherited Methods<a class="headerlink" href="#inherited-methods" title="Permalink to this headline">¶</a></h2>
+<p>These methods are inherited from its super classes:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="83%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Class Method</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference external" href="../classes/object.html#object-getid">Object:getID</a></td>
+<td>Returns widget&#8217;s identifier.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="../classes/object.html#object-setid">Object:setID</a></td>
+<td>Sets the widget identifier.</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="../classes/object.html#object-getname">Object:getName</a></td>
+<td>Returns widget&#8217;s name.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="../classes/object.html#object-setname">Object:setName</a></td>
+<td>Sets the widget name.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="class-methods">
+<h2>Class Methods<a class="headerlink" href="#class-methods" title="Permalink to this headline">¶</a></h2>
+<p>These methods are defined by this class.</p>
+<hr class="docutils" />
+<div class="section" id="widget-getwxobj">
+<h3>Widget:getwxObj<a class="headerlink" href="#widget-getwxobj" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Gets the wxWidgets object.</p>
+<blockquote>
+<div><em>Returns an userdata value</em></div></blockquote>
+</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>userdata</td>
+<td>Widget:getwxObj()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="widget-getparent">
+<h3>Widget:getParent<a class="headerlink" href="#widget-getparent" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Returns the parent.</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="91%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a href="#id18"><span class="problematic" id="id19">object_</span></a></td>
+<td>Widget:getParent( )</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="widget-getwidgettype">
+<h3>Widget:getWidgetType<a class="headerlink" href="#widget-getwidgettype" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Returns the widget type identificator.</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="91%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../types.html#number-type">number</a></td>
+<td>Widget:getWidgetType()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="widget-setwidgettype">
+<h3>Widget:setWidgetType<a class="headerlink" href="#widget-setwidgettype" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Sets the widget type identificator.</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../types.html#boolean-type">bool</a></td>
+<td>Widget:setWidgetType( <a class="reference external" href="../types.html#string-type">string</a> sWidgetName )</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="widget-getposx">
+<h3>Widget:getPosX<a class="headerlink" href="#widget-getposx" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Returns the position related to X.</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="91%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../types.html#number-type">number</a></td>
+<td>Widget:getPosX()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="widget-setposx">
+<h3>Widget:setPosX<a class="headerlink" href="#widget-setposx" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Sets the position related to X.</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../types.html#boolean-type">bool</a></td>
+<td>Widget:setPosX( <a class="reference external" href="../types.html#number-type">number</a> nPosX )</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="widget-getposy">
+<h3>Widget:getPosY<a class="headerlink" href="#widget-getposy" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Returns the position related to Y.</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="91%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../types.html#number-type">number</a></td>
+<td>Widget:getPosY()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="widget-setposy">
+<h3>Widget:setPosY<a class="headerlink" href="#widget-setposy" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Sets the position related to Y.</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../types.html#boolean-type">bool</a></td>
+<td>Widget:setPosY( <a class="reference external" href="../types.html#number-type">number</a> nPosY )</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="widget-getwidth">
+<h3>Widget:getWidth<a class="headerlink" href="#widget-getwidth" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Returns the width of the widget.</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="91%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../types.html#number-type">number</a></td>
+<td>Widget:getWidth()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="widget-setwidth">
+<h3>Widget:setWidth<a class="headerlink" href="#widget-setwidth" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Sets the width of the widget.</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../types.html#boolean-type">bool</a></td>
+<td>Widget:setWidth( <a class="reference external" href="../types.html#number-type">number</a> nWidth )</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="widget-getheight">
+<h3>Widget:getHeight<a class="headerlink" href="#widget-getheight" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Returns the height of the widget.</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="91%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../types.html#number-type">number</a></td>
+<td>Widget:getHeight()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="widget-setheight">
+<h3>Widget:setHeight<a class="headerlink" href="#widget-setheight" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Sets the height of the widget.</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../types.html#boolean-type">bool</a></td>
+<td>Widget:setHeight( <a class="reference external" href="../types.html#number-type">number</a> nHeight )</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="widget-getvisible">
+<h3>Widget:getVisible<a class="headerlink" href="#widget-getvisible" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Returns true if the widget is visible.</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../types.html#boolean-type">bool</a></td>
+<td>Widget:getVisible( )</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="widget-setvisible">
+<h3>Widget:setVisible<a class="headerlink" href="#widget-setvisible" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Sets the visibility of the widget.</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../types.html#nil-type">nil</a></td>
+<td>Widget:setVisible( <a class="reference external" href="../types.html#boolean-type">bool</a> bVisible )</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="widget-getenabled">
+<h3>Widget:getEnabled<a class="headerlink" href="#widget-getenabled" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Returns true if the widget is enabled.</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../types.html#boolean-type">bool</a></td>
+<td>Widget:getEnabled( )</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="widget-setenabled">
+<h3>Widget:setEnabled<a class="headerlink" href="#widget-setenabled" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Set if enabled or disabled.</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../types.html#nil-type">nil</a></td>
+<td>Widget:setEnabled( <a class="reference external" href="../types.html#boolean-type">bool</a> bEnable )</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="class-events">
+<h2>Class Events<a class="headerlink" href="#class-events" title="Permalink to this headline">¶</a></h2>
+<p>The following events are emitted by this class:</p>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="74%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Event name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference external" href="../classes/widget.onenter.html">Widget.onEnter</a></td>
+<td>When the mouse moves onto this widget.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="../classes/widget.onleave.html">Widget.onLeave</a></td>
+<td>When the mouse moves out to this widget.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="window.html" class="btn btn-neutral float-right" title="Window" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="object.html" class="btn btn-neutral" title="Object" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Dario Cano.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.0.01',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

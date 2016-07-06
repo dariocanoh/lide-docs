@@ -1,0 +1,367 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Event &mdash; Lide SDK 0.0.01 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Lide SDK 0.0.01 documentation" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Lide SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.01
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../welcome.html">Welcome</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../welcome.html#installation">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../welcome.html#how-to-use-it">How to use it</a></li>
+</ul>
+<p class="caption"><span class="caption-text">OOP Model</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../oop-intro.html">Class reference</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../types.html">Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes.html">Classes</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Lide SDK</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>Event</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/classes/event.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="event">
+<span id="classevent"></span><h1>Event<a class="headerlink" href="#event" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Event is derived from <a class="reference internal" href="object.html#classobject"><span class="std std-ref">Object class</span></a>.</p>
+</div>
+<p>An event is a structure holding information about an event passed to a callback or member function.
+Event is used to be a multipurpose event object, and is an abstract base class for other event classes.</p>
+<hr class="docutils" />
+<div class="section" id="constructor">
+<h2>Constructor<a class="headerlink" href="#constructor" title="Permalink to this headline">¶</a></h2>
+<p>Event class has a single constructor:</p>
+<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="n">object</span> <span class="nl">Event</span><span class="p">:</span><span class="k">new</span> <span class="p">(</span> <span class="n">string</span> <span class="n">sEventName</span><span class="p">,</span> <span class="n">object</span> <span class="n">oEventSender</span><span class="p">,</span> <span class="n">function</span> <span class="n">fDefEventHandler</span> <span class="p">)</span>
+</pre></div>
+</div>
+<div class="section" id="arguments">
+<h3>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h3>
+<p>These arguments are received by class constructor.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="12%" />
+<col width="88%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Argument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>sEvtName</td>
+<td>The event name</td>
+</tr>
+<tr class="row-odd"><td>oEvtSender</td>
+<td>The object associated to the event (usually is a derived of &#8220;<a class="reference external" href="../classes/widget.html">Widget</a>&#8221;)</td>
+</tr>
+<tr class="row-even"><td>fEvtHandler</td>
+<td>The event handler function (that is called when you call <cite>Event:call</cite>).</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="inherited-methods">
+<h2>Inherited Methods<a class="headerlink" href="#inherited-methods" title="Permalink to this headline">¶</a></h2>
+<p>These methods are inherited from its super classes:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="83%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Class Method</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference external" href="../classes/object.html#object-getid">Object:getID</a></td>
+<td>Returns event&#8217;s identifier.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="../classes/object.html#object-setid">Object:setID</a></td>
+<td>Sets the event identifier.</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="../classes/object.html#object-getname">Object:getName</a></td>
+<td>Returns event&#8217;s name.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="../classes/object.html#object-setname">Object:setName</a></td>
+<td>Sets the event name.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="class-methods">
+<h2>Class Methods<a class="headerlink" href="#class-methods" title="Permalink to this headline">¶</a></h2>
+<p>These methods are defined by this class.</p>
+<div class="section" id="event-getsender">
+<h3>Event:getSender<a class="headerlink" href="#event-getsender" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Gets the object associated to the event.</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="91%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a href="#id4"><span class="problematic" id="id5">object_</span></a></td>
+<td>Event:getSender()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="event-setsender">
+<h3>Event:setSender<a class="headerlink" href="#event-setsender" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Sets the object associated to the event.</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="7%" />
+<col width="93%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../types.html#boolean-type">bool</a></td>
+<td>Event:setSender ( object oEvtSender )</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="event-gethandler">
+<h3>Event:getHandler<a class="headerlink" href="#event-gethandler" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Returns the event handler function (that is called when you call <cite>Event:call</cite>).</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="89%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../types.html#function-type">function</a></td>
+<td>Event:getHandler()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="event-sethandler">
+<h3>Event:setHandler<a class="headerlink" href="#event-sethandler" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Sets the event handler function.</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="7%" />
+<col width="93%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../types.html#boolean-type">bool</a></td>
+<td>Event:setSender ( object oEvtSender )</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="event-call">
+<h3>Event:call<a class="headerlink" href="#event-call" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Calls the event handler and pass it all the args.</p>
+<blockquote>
+<div><em>Returns one value: Returns first value what event handler sents.</em></div></blockquote>
+</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="5%" />
+<col width="95%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>...</td>
+<td>Event:call ( ... )</td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Dario Cano.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.0.01',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
