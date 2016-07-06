@@ -1,35 +1,36 @@
 Welcome
 =======
 
-Lide Framework es una librería que le permite crear interfaces gráficas multiplataforma desde el lenguaje Lua. 
-Lide utiliza wxWidgets para construir los controles y las ventanas, ésto asegura la integración de sus aplicaciones con GTK+ en Linux y controles realmente nativos en Windows.
 
+Lide Framework is a library that allows you to create multiplatform graphical interfaces from Lua language.
+Lide uses wxWidgets to build controls and windows, this ensures the integration of your applications 
+with GTK + on Linux and really native controls in Windows.
 
 Installation
 ============
 
-* Asegurese de tener instalado el interprete de lua5.1 y el gestor de paquetes luarocks5.1 en su máquina.
+* Make sure you have the lua5.1 interpreter and manager luarocks5.1 packages installed on your machine.
 
 ============  ======================================================================================
- Plataforma     Instalación
+ Platform      Installation
 ============  ======================================================================================
- Windows   	   Descargue `LuaForWindows_v5.1.4-33.exe <http://files.luaforge.net/releases/luaforwindows/luaforwindows/5.1.4-33/LuaForWindows_v5.1.4-33.exe>`_ y `luarocks-2.3.0-win32.zip <http://keplerproject.github.io/luarocks/releases/luarocks-2.3.0-win32.zip>`_.
+ Windows   	   Download `LuaForWindows_v5.1.4-33.exe <http://files.luaforge.net/releases/luaforwindows/luaforwindows/5.1.4-33/LuaForWindows_v5.1.4-33.exe>`_ and `luarocks-2.3.0-win32.zip <http://keplerproject.github.io/luarocks/releases/luarocks-2.3.0-win32.zip>`_.
  Ubuntu        ``$ sudo apt-get install lua5.1 luarocks libwxgtk2.8``
  Archlinux	   ``# pacman -S lua5.1 luarocks5.1 wxgtk2.8``
 ============  ======================================================================================
 
 
-* Instalar la última versión de Lide desde LuaRocks:
+* Install the latest version of Lide from LuaRocks:
 
 .. code-block:: bash
 
 	$ luarocks install https://raw.githubusercontent.com/thedary/lide-sdk/master/lide-0.0-0.rockspec
 
 
-Cómo usarlo
-===========
+How to use it
+=============
 
-* Cree un archivo ``main.lua`` donde inicie la aplicación.
+* Create a file `` main.lua`` where you start the application.
 
 .. code-block:: lua
 	:linenos:
@@ -52,14 +53,14 @@ Cómo usarlo
 
 	form1:show(true)
 
-Con el anterior código estamos creando un nuevo formulario y poniendo un botón dentro de él 
-en la posición (10, 30), al hacer click dentro del botón se mostrará un mensaje "Hola mundo".
+With the above code we are creating a new form and putting a button inside it
+at position (10, 30), clicking inside the button a message "Hello World" is displayed.
 
-* Ejecute el archivo ``main.lua`` con el siguiente comando:
+* Run the file `` main.lua`` with the following command:
 
 .. code-block:: bash
 	
 	$ lua5.1 -l lide.init main.lua
 
-Esto es lo único que usted necesita para empezar a crear aplicaciones, **cabe resaltar que
-éstas instrucciones funcionan** de igual manera para Windows o GNU/Linux.
+This is all you need to start building applications, **should be noted that these instructions work** 
+similarly to Windows or GNU/Linux.
