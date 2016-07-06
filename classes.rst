@@ -1,8 +1,7 @@
 Classes
 =======
 
-Estas son las clases de lide:
-
+These are the API classes.
 
 .. toctree::
 	:maxdepth: 1
@@ -11,5 +10,3 @@ Estas son las clases de lide:
 	classes/widget
 	classes/event
 	classes/control
-
-..//	classes/itemcontainer

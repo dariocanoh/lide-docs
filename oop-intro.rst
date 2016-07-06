@@ -1,5 +1,6 @@
-Classes in Lide
-===============
+
+Referencia de clases
+===================
 
 A modo de tutorial, en este documento trataré de explicar en qué consiste la programación orientada a objetos en Lide y las adaptaciones que se hicieron en el lenguaje base (Lua) para que el programador pueda diseñar e implementar sus propias clases o incluso modificar aspectos del framework Lide.
 
