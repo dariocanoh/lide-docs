@@ -7,6 +7,11 @@ These are the API classes.
 	:maxdepth: 1
 	
 	classes/object
+	
 	classes/widget
-	classes/event
+	classes/window
+	classes/form
+	
 	classes/control
+	classes/button
+	classes/label

@@ -18,6 +18,8 @@
 
 .. ////////////////////// CLASSES 
 
+.. _Object:  ../classes/object.html
+
 .. _Font:  ../classes/font.html
 
 .. _Widget:  ../classes/widget.html

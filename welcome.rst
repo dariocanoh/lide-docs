@@ -14,7 +14,7 @@ Installation
 ============  ======================================================================================
  Platform      Installation
 ============  ======================================================================================
- Windows   	   Download `LuaForWindows_v5.1.4-33.exe <http://files.luaforge.net/releases/luaforwindows/luaforwindows/5.1.4-33/LuaForWindows_v5.1.4-33.exe>`_ and `luarocks-2.3.0-win32.zip <http://keplerproject.github.io/luarocks/releases/luarocks-2.3.0-win32.zip>`_.
+ Windows   	   Download `LuaForWindows_v5.1.4-33.exe <http://files.luaforge.net/releases/luaforwindows/luaforwindows/5.1.4-33/LuaForWindows_v5.1.4-33.exe>`_ and `luarocks-2.3.0-win32.zip <http://keplerproject.github.io/luarocks/releases/luarocks-2.3.0-win32.zip>`_ see `(instructions) <https://github.com/keplerproject/luarocks/wiki/Installation-instructions-for-Windows>`_.
  Ubuntu        ``$ sudo apt-get install lua5.1 luarocks libwxgtk2.8``
  Archlinux	   ``# pacman -S lua5.1 luarocks5.1 wxgtk2.8``
 ============  ======================================================================================
