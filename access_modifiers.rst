@@ -1,41 +1,37 @@
-Encapsulación y modificadores de acceso
-=======================================
+Encapsulation and modifiers
+===========================
 
-La encapsulación es una de las características fundamentales en la programación orientada a objetos.
-En Lide vamos a tener a nuestra disposición los tres modificadores básicos: ``private``, ``protected``
-y ``public``. Podemos acceder a éstos modificadores sólo desde dentro del constructor de la clase.
+Encapsulation is one of the key features in object-oriented programming.
+In Lide we will have at our disposal the three basic modifiers: `` private``, `` protected``
+and ``public``. We can access these modifiers only from within the class constructor.
 
-Seguramente aquellos que estén familiarizados con algún lenguaje de programación le resultarán 
-conocidos estos modificadores, para aquellos que no, es una buena ocasión para tener una primera toma 
-de contacto con conceptos fundamentales dentro de la programación orientada a objetos.
+Surely those who are familiar with any programming language you will be
+known these modifiers, for those who do not, it is a good opportunity to have a first shot
+Contact with fundamental concepts in object-oriented programming.
 
-MODIFICADOR PUBLIC
+public Modifier
+***************
+
+This switch is the most permissive of the three, since it indicates that the method, or property, is accessible from any other part of our application.
+This is the default modifier applied if not specify otherwise.
+
+private Modifier
+****************
+
+This switch sets the most restrictive level, since the properties or methods that declare
+as private will only be accessible from within the class.
+
+protected Modifier
 ******************
 
-Este modificador es el más permisivo de los tres, puesto que indica que el método, o la propiedad, es accesible desde cualquier otra parte de nuestra aplicación.
-Este es el modificador aplicado por defecto en caso de que no especifiquemos lo contrario.
+hese modifiers do not change the form of access or behavior, only control
+from where you can use the class members:
 
-MODIFICADOR PRIVATE
-*******************
+**public:** from anywhere.
+**private:** from the methods of the class.
+**protected:** from the methods of the class and from the methods of the derived classes.
 
-Este modificador establece el nivel más restrictivo, puesto que las propiedades o métodos que declaremos 
-como private solo serán accesibles desde el interior de la clase.
-
-MODIFICADOR PROTECTED
-*********************
-
-Este modificador establece un nivel de restricción medio, esto quiere decir que las propiedades o 
-métodos declarados como protected sólo serán accesibles desde la clase base o las clases hijas que hereden de la clase base.
-
- 
-Estos modificadores no cambian ni la forma de acceso ni el comportamiento, únicamente controlan 
-desde dónde se pueden usar los miembros de la clase:
-
-**public:** desde cualquier sitio.
-**private:** desde los métodos de la clase.
-**protected:** desde los métodos de la clase y desde los métodos de las clases derivadas.
-
-Una explicación con código de cómo funciona la encapsulación en Lide.
+A code explanation of how works Lide encapsulation:
 
 .. code-block:: lua
 
@@ -53,12 +49,12 @@ Una explicación con código de cómo funciona la encapsulación en Lide.
 	     }
 	end
 
-De ésta manera tendremos una nueva clase llamada “Window” con diferentes atributos que son accesibles 
-desde lugares diferentes, por ejemplo:
+In this way we will have a new class called "Window" with different attributes that are accessible
+from different places, for example:
 
-Si creamos una instancia de ésta clase va a ser posible para nosotros acceder al campo “onShow” que 
-corresponde a un objeto de la clase “Event” desde la propia instancia, es decir fuera de la clase,
-aquí un ejemplo: 
+If we create an instance of this class will be possible for us to access the field "OnShow" that
+It corresponds to an object in the "Event" class from the instance itself, ie outside the class,
+Here's an example:
 
 .. code-block:: lua 
 
@@ -70,14 +66,14 @@ aquí un ejemplo:
 	print( form1 .onClick )         ---> prints [event: onClick]
 	print( form1 .Flags )           ---> prints nil
 
-En éste ejemplo podemos notar que al intentar acceder al campo público “onClick” desde fuera de la 
-clase el sistema nos devuelve el valor requerido, pero si intentamos hacer lo mismo con un valor 
-privado como “Flags” o protegido no vamos a tener el mismo resultado y no se puede acceder al valor.
+In this example we can see that when trying to access the public field "onClick" from outside the
+class system gives us the required value, but if we try to do the same with a value
+Private as "Flags" or protected we will not have the same result and can not access the value.
 
-La manera correcta de hacerlo es definiendo métodos que nos permitan trabajar con estos valores y 
-para esto tenemos los famosos getters/setters.
+The correct way to do this is by defining methods that allow us to work with these values and
+for this we have the famous getters / setters.
 
-En el siguiente ejemplo vamos a definir un método que nos permita acceder al campo “Flags” de la clase:
+In the following example we will define a method that allows us to access the field "Flags" class:
 
 .. code-block:: lua 
 
@@ -90,15 +86,14 @@ En el siguiente ejemplo vamos a definir un método que nos permita acceder al ca
 	...
 
  
-Al ser un campo privado sólo podremos acceder a este llamando al método Window::getFlags desde una 
-instancia directa de la propia clase “Window” es decir que si intentamos acceder a éste valor desde 
-una subclase de “Window” el resultado será nulo.
+Being a private field we can only access this by calling the Window :: getFlags method from a
+direct instance of the class "Window" itself is that if we try to access this value from
+a subclass of "Window" the result will be zero.
 
-Si en realidad deseas compartir un campo entre una clase y sus subclases debes usar el modificador 
-“protected“. Así entonces el valor será accesible desde la propia clase y sus subclases, éste tipo de
-modificador nos sería útil por ejemplo para los campos que tienen que ver con el tamaño y posición de 
-la ventana puesto que pueden ser valores que se necesiten en otras subclases de “Window” como un “Dialog” 
-o un formulario especial.
+If you really want to share a field between a class and its subclasses you must use the modifier
+"Protected". So then the value will be accessible from within the class and its subclasses, this type of
+we modifier would be useful for example for fields that have to do with the size and position
+since the window can be values that are needed in other subclasses of "Window" as a "Dialog"
 
 .. code-block:: lua 
 
@@ -110,7 +105,7 @@ o un formulario especial.
 	end
 	...
 
-De ésta forma cuando creemos una instancia de la clase “Dialog” vamos a poder acceder al campo “Width” definido en la superclase utilizando el método “getWidth”.
+This way when we create an instance of the "Dialog" class we will be able to access the field "Width" as defined in the superclass using the "getWidth" method.
 
 .. code-block:: lua 
 
@@ -123,5 +118,5 @@ De ésta forma cuando creemos una instancia de la clase “Dialog” vamos a pod
 	print( myDLG .onClick )         ---> prints [event: onClick]
 	print( myDLG :getWidth() )      ---> prints 300
 
-De ésta manera podemos controlar el acceso a los diferentes campos de nuestras clases, la idea es 
-hacer una correcta abstracción y que cada uno de las instancias trabaje sólo con los valores que son útiles para sí.
+In this way we can control access to different areas of our classes, the idea is
+make a correct abstraction and that each of the instances work only with the values that are useful for themselves.
