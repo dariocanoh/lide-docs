@@ -9,19 +9,19 @@ Seguramente aquellos que estén familiarizados con algún lenguaje de programaci
 conocidos estos modificadores, para aquellos que no, es una buena ocasión para tener una primera toma 
 de contacto con conceptos fundamentales dentro de la programación orientada a objetos.
 
-MODIFICADOR PUBLIC
+Modificador public
 ******************
 
 Este modificador es el más permisivo de los tres, puesto que indica que el método, o la propiedad, es accesible desde cualquier otra parte de nuestra aplicación.
 Este es el modificador aplicado por defecto en caso de que no especifiquemos lo contrario.
 
-MODIFICADOR PRIVATE
+Modificador private
 *******************
 
 Este modificador establece el nivel más restrictivo, puesto que las propiedades o métodos que declaremos 
 como private solo serán accesibles desde el interior de la clase.
 
-MODIFICADOR PROTECTED
+Modificador protected
 *********************
 
 Este modificador establece un nivel de restricción medio, esto quiere decir que las propiedades o 
@@ -125,3 +125,4 @@ De ésta forma cuando creemos una instancia de la clase “Dialog” vamos a pod
 
 De ésta manera podemos controlar el acceso a los diferentes campos de nuestras clases, la idea es 
 hacer una correcta abstracción y que cada uno de las instancias trabaje sólo con los valores que son útiles para sí.
+
