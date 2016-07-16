@@ -24,9 +24,9 @@
 
 .. _Widget:  ../classes/widget.html
 
+.. _Control:  ../classes/control.html
 
-
-
+.. _Button:  ../classes/button.html
 
 
 .. _Widget.onEnter:  ../classes/widget.onenter.html
