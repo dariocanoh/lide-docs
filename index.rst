@@ -19,3 +19,6 @@
 
 	./types
 	./classes/
+
+.. // Required values for html docs visualization
+.. include:: ../directives.rst
