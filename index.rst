@@ -18,4 +18,4 @@
 	:caption: API Reference
 
 	./types
-	./classes
+	./classes/
