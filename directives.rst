@@ -1,6 +1,6 @@
 .. /////// 2015/06/15 - Dario Cano [thdkano@gmail.com]
-.. // docs/types/nil.rst
-.. //  nil type reference
+.. // docs/directives.rst
+.. //  ...
 .. //   (c) 2015 Dario Cano | lide license
 
 .. _Event:    ../classes/event.html
@@ -16,21 +16,19 @@
 .. _number:   ../types.html # number-type
 .. _bool:     ../types.html # boolean-type
 
-.. ////////////////////// CLASSES 
-
-.. _Object:  ../classes/object.html
-
-.. _Font:  ../classes/font.html
-
-.. _Widget:  ../classes/widget.html
-
+.. _Object:   ../classes/object.html
+.. _Font:  	  ../classes/font.html
+.. _Widget:   ../classes/widget.html
 .. _Control:  ../classes/control.html
+.. _Button:   ../classes/button.html
 
-.. _Button:  ../classes/button.html
 
+.. // Define events:
 
 .. _Widget.onEnter:  ../classes/widget.onenter.html
 .. _Widget.onLeave:  ../classes/widget.onleave.html
+
+.. _Button.onClick:	 ../classes/button.onclick.html
 
 
 .. // Define virtual methods:
@@ -39,7 +37,6 @@
 .. _Object:setID: ../classes/object.html # object-setid
 .. _Object:getName: ../classes/object.html # object-getname
 .. _Object:setName: ../classes/object.html # object-setname
-
 
 .. // class widget:
 
@@ -58,3 +55,8 @@
 .. _Widget:setEnabled:   ../classes/widget.html # widget-setenabled   
 .. _Widget:getVisible:   ../classes/widget.html # widget-getvisible   
 .. _Widget:setVisible:   ../classes/widget.html # widget-setvisible      
+
+.. _Control:getText: ../classes/control.html # control-gettext
+.. _Control:setText: ../classes/control.html # control-settext
+.. _Control:getFont: ../classes/control.html # control-getfont
+.. _Control:setFont: ../classes/control.html # control-setfont

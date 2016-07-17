@@ -56,7 +56,7 @@ How to use it
 With the above code we are creating a new form and putting a button inside it
 at position (10, 30), clicking inside the button a message "Hello World" is displayed.
 
-* Run the file `` main.lua`` with the following command:
+* Run the file ``main.lua`` with the following command:
 
 .. code-block:: bash
 	

@@ -7,8 +7,11 @@
 
 Button
 ======
+.. note::
 
-A button is a control that contains a text string, and is one of the most common elements of a GUI.
+  Button is derived from Control_ class.
+
+A Button is a control that contains a text string, and is one of the most common elements of a GUI.
 
 ----------------------------------------------------------------------------------------------------
 
@@ -28,6 +31,20 @@ Button class has a complex constructor:
 
 ------------------------------------------------------------------------------------------------------
 
+Events
+******
+
+The following events are emitted by this class:
+
+=========================  =========================================================================
+  Event name                Description
+=========================  =========================================================================
+ Widget.onEnter_             When the mouse moves onto this widget.
+ Widget.onLeave_             When the mouse moves out to this widget.
+ Button.onClick_             When the user clicks on this button.
+=========================  =========================================================================
+
+------------------------------------------------------------------------------------------------------
 
 Inherited Methods
 *****************
@@ -56,28 +73,6 @@ These methods are inherited from its super classes:
   Control:setText_       Sets the button text.
 =====================  =============================================================================
 
-Events
-******
-
-Class Events
-************
-
-The following events are emitted by this class:
-
-.. toctree::
-    :hidden:
-    
-     widget.onenter.rst
-     widget.onleave.rst
-     button.onclick.rst
-
-=========================  =========================================================================
-  Event name                Description
-=========================  =========================================================================
- Widget.onEnter_             When the mouse moves onto this widget.
- Widget.onLeave_             When the mouse moves out to this widget.
- Button.onClick_             When the user clicks on this button.
-=========================  =========================================================================
 ----------------------------------------------------------------------------------------------------
 
 .. // Required values for html docs visualization

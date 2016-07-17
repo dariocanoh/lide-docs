@@ -2,7 +2,7 @@ Encapsulation and modifiers
 ===========================
 
 Encapsulation is one of the key features in object-oriented programming.
-In Lide we will have at our disposal the three basic modifiers: `` private``, `` protected``
+In Lide we will have at our disposal the three basic modifiers: ``private``, ``protected``
 and ``public``. We can access these modifiers only from within the class constructor.
 
 Surely those who are familiar with any programming language you will be

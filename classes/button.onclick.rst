@@ -3,6 +3,8 @@
 .. //  Reference to onClick event of Button class.
 .. //   (c) 2015 Dario Cano | lide license
 
+.. _Button.onClick:
+
 Button.onClick
 ^^^^^^^^^^^^^^ 
 
