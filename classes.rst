@@ -11,8 +11,6 @@ These are the API classes.
 
 	classes/widget
 	classes/window
-	classes/form
 	
 	classes/control
 	classes/button
-	classes/label
