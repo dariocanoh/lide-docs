@@ -19,6 +19,7 @@
 
 	./types
 	./classes/
+	./events/
 
 .. // Required values for html docs visualization
 .. include:: ../directives.rst
