@@ -102,4 +102,4 @@ In this example we create a new Form ...
 ----------------------------------------------------------------------------------------------------
 
 .. // Required values for html docs visualization
-.. include:: ../types.rst
+.. include:: ../directives.rst

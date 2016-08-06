@@ -7,6 +7,9 @@
 
 TextCtrl
 ========
+.. note::
+
+  Button is derived from Control_ class.
 
 A text box allows text to be displayed and edited. It may be single line or multi-line.
 
@@ -26,7 +29,22 @@ TextCtrl class has a complex constructor:
  		object Parent, Text = 'My TextCtrl'
  	}
 
-----------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+
+Events
+******
+
+The following events are emitted by this class:
+
+=========================  =========================================================================
+  Event name                Description
+=========================  =========================================================================
+ Widget.onEnter_             When the mouse moves onto this widget.
+ Widget.onLeave_             When the mouse moves out to this widget.
+ Button.onClick_             When the user clicks on this button.
+=========================  =========================================================================
+
+------------------------------------------------------------------------------------------------------
 
 
 Inherited Methods
@@ -34,25 +52,27 @@ Inherited Methods
 
 These methods are inherited from its super classes:
 
-=====================  ==================================  =========================================
-  Class Method           Defined in                  		  Description
-=====================  ==================================  =========================================
- Object:getID		   :ref:`Object class <ClassObject>`    Returns object's identifier.
- Object:setID		   :ref:`Object class <ClassObject>`    Sets the object identifier.
- Object:getName		   :ref:`Object class <ClassObject>`    Returns object's name.
- Object:setName		   :ref:`Object class <ClassObject>`    Sets the object name.
- Widget:getParent	   :ref:`Widget class <ClassWidget>`    Returns object's parent.
- Widget:setParent	   :ref:`Widget class <ClassWidget>`    Sets the object parent.
- Widget:getPosX	   	   :ref:`Widget class <ClassWidget>`    Returns object's position related to X.
- Widget:setPosX	   	   :ref:`Widget class <ClassWidget>`    Sets the object position related to X.
- Widget:getPosY	   	   :ref:`Widget class <ClassWidget>`    Returns object's position related to Y.
- Widget:setPosY	   	   :ref:`Widget class <ClassWidget>`    Sets the object position related to Y.
- Widget:getWidth	   :ref:`Widget class <ClassWidget>`    Returns object's width.
- Widget:setWidth	   :ref:`Widget class <ClassWidget>`    Sets the object width.
- Widget:getHeight	   :ref:`Widget class <ClassWidget>`    Returns object's height.
- Widget:setHeight	   :ref:`Widget class <ClassWidget>`    Sets the object height.
- Widget:getwxObj	   :ref:`Widget class <ClassWidget>`    Returns the wxWidgets object.
-=====================  ==================================  =========================================
+=====================  =============================================================================
+  Class Method             Description
+=====================  =============================================================================
+  Object:getID_          Returns object's identifier.
+  Object:setID_          Sets the object identifier.
+  Object:getName_        Returns object's name.
+  Object:setName_        Sets the object name.
+  Widget:getParent_      Returns object's parent.
+  Widget:setParent_      Sets the object parent.
+  Widget:getPosX_        Returns object's position related to X.
+  Widget:setPosX_        Sets the object position related to X.
+  Widget:getPosY_        Returns object's position related to Y.
+  Widget:setPosY_        Sets the object position related to Y.
+  Widget:getWidth_       Returns object's width.
+  Widget:setWidth_       Sets the object width.
+  Widget:getHeight_      Returns object's height.
+  Widget:setHeight_      Sets the object height.
+  Widget:getwxObj_       Returns the wxWidgets object.
+  Control:getText_       Returns the button text.
+  Control:setText_       Sets the button text.
+=====================  =============================================================================
 
 ----------------------------------------------------------------------------------------------------
 
@@ -620,21 +640,8 @@ TextCtrl:showPosition
  void_ 	  TextCtrl:showPosition( nPos )
 =======  ===========================================================================================
 
-----------------------------------------------------------------------------------------------------
-
-
-Events
-******
-
-The following events are emitted by this class:
-
-.. toctree::
-    :hidden:
-    
-	classes/widget.onenter
-    classes/widget.onleave
-    
+  
 ----------------------------------------------------------------------------------------------------
 
 .. // Required values for html docs visualization
-.. include:: ../types.rst
+.. include:: ../directives.rst

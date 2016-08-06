@@ -12,5 +12,10 @@ These are the API classes.
 	classes/widget
 	classes/window
 	
+	classes/panel	
 	classes/control
+	
 	classes/button
+
+	classes/textctrl
+	classes/textbox

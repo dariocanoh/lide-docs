@@ -78,4 +78,4 @@ The following events are emitted by this class:
 ----------------------------------------------------------------------------------------------------
 
 .. // Required values for html docs visualization
-.. include:: ../types.rst
+.. include:: ../directives.rst
