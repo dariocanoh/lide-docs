@@ -3,6 +3,8 @@
 .. //  Widget's event onLeave reference
 .. //   (c) 2016 Dario Cano | lide license
 
+.. _Widget.onLeave:
+
 Widget.onLeave
 ^^^^^^^^^^^^^^ 
 
