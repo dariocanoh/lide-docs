@@ -42,4 +42,4 @@ This example prints the name of the widget when the mouse is out of it.
 ----------------------------------------------------------------------------------------------------
 
 .. // Required values for html docs visualization
-.. include:: ../types.rst
+.. include:: ../directives.rst

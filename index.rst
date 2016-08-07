@@ -21,5 +21,11 @@
 	./classes/
 	./events/
 
+.. toctree::
+	:hidden:
+	:caption: Hello World
+
+	./make_window
+
 .. // Required values for html docs visualization
 .. include:: ../directives.rst
