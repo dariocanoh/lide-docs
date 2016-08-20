@@ -101,6 +101,17 @@ that manipulate strings with 100K or 1M characters are not unusual in Lua.
 
 
 ----------------------------------------------------------------------------------------------------
+.. _object:
+
+Object Type
+***********
+
+An object type is a user-defined composite datatype that encapsulates a data structure along with the
+functions and procedures needed to manipulate the data. The variables that form the data structure are
+called attributes. The functions and procedures that characterize the behavior of the object type are
+called methods. A special kind of method called the constructor creates a new instance of the object
+type and fills in its attributes.
+
 
 .. //_bool:     ../types/bool.html
 .. //_string:   ../types/string.html
