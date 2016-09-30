@@ -12,6 +12,7 @@
 
 	./oop-intro
 	./access_modifiers
+	./oop/class_methods
 	
 .. toctree::
 	:hidden:

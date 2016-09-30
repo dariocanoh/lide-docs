@@ -15,6 +15,7 @@
 .. _nil:      ../types.html # nil-type
 .. _number:   ../types.html # number-type
 .. _bool:     ../types.html # boolean-type
+.. _table:    ../types.html # table-type
 
 .. ////////////////////// CLASSES 
 
