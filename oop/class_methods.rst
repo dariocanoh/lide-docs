@@ -12,7 +12,7 @@ Class:enum
  table_       Class : enum ( table_ tblEnum )
 ===========  =======================================================================================
 
-`` Enum`` method allows you to add classes constant values, returns a read-only table ** ** that
+``enum`` method allows you to add classes constant values, **returns a read-only table** that
 It contains the values provided for the enum.
 
 
