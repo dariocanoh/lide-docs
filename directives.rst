@@ -11,10 +11,10 @@
 .. _function: ../types.html # function-type
 .. _string:   ../types.html # string-type
 .. _userdata: ../types.html # userdata-type
-
-.. _nil:      ../types.html # nil-type
+.. _table:    ../types.html # table-type
 .. _number:   ../types.html # number-type
 .. _bool:     ../types.html # boolean-type
+
 
 .. _Object:   ../classes/object.html
 .. _Font:  	  ../classes/font.html
