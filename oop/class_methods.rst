@@ -1,8 +1,9 @@
-Métodos de las Clases
-=====================
+Class Methods
+=============
 
-Estos métodos permiten interactuar con las clases directamente y hacer modificaciones utiles para
-los constructores y metodos de las clases y las instancias.
+These methods allow you to interact directly with classes and make useful changes to constructors and 
+methods of classes and instances.
+
 
 Class:enum
 **********
@@ -11,8 +12,9 @@ Class:enum
  table_       Class : enum ( table_ tblEnum )
 ===========  =======================================================================================
 
-El método ``enum`` permite agregar valores constantes a las clases, devuelve una tabla de **sólo lectura** que
-contiene los valores proporcionados para el enum.
+`` Enum`` method allows you to add classes constant values, returns a read-only table ** ** that
+It contains the values provided for the enum.
+
 
 .. code-block:: lua
 
