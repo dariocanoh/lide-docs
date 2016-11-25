@@ -8,6 +8,7 @@ These are the API classes.
 	
 	classes/object
 	classes/event
+	classes/menu
 
 	classes/widget
 	classes/window
