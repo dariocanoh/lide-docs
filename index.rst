@@ -16,7 +16,25 @@
 	
 .. toctree::
 	:hidden:
-	:caption: Referencia de la API
+	:caption: API Reference
 
 	./types
-	./classes
+	./classes/
+	./events/
+
+.. toctree::
+	:hidden:
+	:caption: Hola mundo en Lua
+
+	./make_window
+
+
+.. toctree::
+	:hidden:
+	:caption: Módulos Lua
+
+	./platform
+
+
+.. // Required values for html docs visualization
+.. include:: ../directives.rst
