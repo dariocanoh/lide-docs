@@ -1,4 +1,0 @@
-
-ln -s ~/Proyectos/Lide-SDK/lide lide
-ln -s ~/Proyectos/Lide-SDK/Libs/wx.so wx.so
-ln -s ~/Proyectos/Lide-SDK/Libs/libwxlua_lua51-wx28gtk2u-2.8.12.3.so libwxlua_lua51-wx28gtk2u-2.8.12.3.so
