@@ -13,7 +13,7 @@ Instalación
 ============  ======================================================================================
  Plataforma     Instalación
 ============  ======================================================================================
- Windows   	   Descargue `LuaForWindows_v5.1.4-33.exe <http://files.luaforge.net/releases/luaforwindows/luaforwindows/5.1.4-33/LuaForWindows_v5.1.4-33.exe>`_ y `luarocks-2.3.0-win32.zip <http://keplerproject.github.io/luarocks/releases/luarocks-2.3.0-win32.zip>`_.
+ Windows   	   Descargue la última versión de `lidesdk.installer.exe <http://lidesdk.dcanoh.me/windows>`_.
  Ubuntu        ``$ sudo apt-get install lua5.1 luarocks libwxgtk2.8``
  Archlinux	   ``# pacman -S lua5.1 luarocks5.1 wxgtk2.8``
 ============  ======================================================================================
@@ -23,7 +23,7 @@ Instalación
 
 .. code-block:: bash
 
-	$ luarocks install https://raw.githubusercontent.com/thedary/lide-sdk/master/lide-0.0-0.rockspec
+	$ luarocks install https://raw.githubusercontent.com/lidesdk/commandline/master/lide-0.0-0.rockspec
 
 
 Cómo usarlo
@@ -59,7 +59,7 @@ en la posición (10, 30), al hacer click dentro del botón se mostrará un mensa
 
 .. code-block:: bash
 	
-	$ lua5.1 -l lide.init main.lua
+	$ lide main.lua
 
 Esto es lo único que usted necesita para empezar a crear aplicaciones, **cabe resaltar que
 éstas instrucciones funcionan** de igual manera para Windows o GNU/Linux.
