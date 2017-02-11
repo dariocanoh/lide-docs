@@ -4,9 +4,67 @@ Lide Repositories
 Dentro del repositorio de lide, están guardadas las versiones correctas de las librerias utilizadas
 por el framework y otros paquetes de librerias populares soportadas por lide team.
 
-La configuración de los repositorios del framework está guardada en el archivo lide.repos, este archivo
+La configuración de los repositorios del framework está guardada en el archivo ``lide.repos``, este archivo
 puede ser modificado sin problemas, añadiendo más repositorios al framework para tener diferentes fuentes 
 de descarga o para crear nuestro propio repositorio.
+
+
+Administración de paquetes en lide
+**********************************
+
+Primeramente lide tiene un repositorio oficial en el cual actualizamos las versiones de las librerias
+más populares, más utiles o que se necesiten en alguna parte de lidesdk.
+
+Un repositorio es una base de datos de paquetes que guarda la información acerca de un conjunto de 
+paquetes en especifico, lide le permite crear su propio repositorio de software y así llevar un mayor 
+control sobre las versiones de las librerias en sus aplicaciones.
+
+
+Instalación
+^^^^^^^^^^^
+
+El asistente de lide, le puede ayudar a instalar las librerías más importantes para sus aplicaciones, 
+por ejemplo si desea instalar un paquete que se llama "luasql"
+
+.. code-block:: bash
+ 
+ $ lide install luasql
+
+
+Actualización
+^^^^^^^^^^^^^
+
+Un paquete sólo va a ser actualizado si tiene instalado el paquete actualmente y la versión en la web es más 
+reciente.
+
+.. code-block:: bash
+ 
+ $ lide update luasql
+
+
+Eliminación
+^^^^^^^^^^^
+
+Para eliminar un paquete es necesario que esté instalado (obviamente), el paquete será removido al 
+instante.
+
+.. code-block:: bash
+ 
+ $ lide remove luasql
+
+
+Encontrar un paquete
+^^^^^^^^^^^^^^^^^^^^
+
+Es fácil encontrar un paquete desde lide.
+
+.. code-block:: bash
+ 
+ $ lide search sql
+
+ stable/luasql 2.1.00
+    LuaSQL is a simple interface from Lua to a DBMS. This package enables
+    a Lua program to connect to SQLite databases.
 
 
 Repositorios propios
@@ -16,7 +74,8 @@ Simplemente debemos seguir una pequeña especificación para poder crear nuestro
 modificamos el archivo lide.repos, por ejemplo si tuviera el archivo de base de datos del repositorio 
 en la ruta: "http://miurl.com/mirepo.db" y suponiendo que el nombre del repositorio es mirepo.
 
-.. code-block::
+
+.. code-block:: bash
 
  [stable]
  url=http://github.com/lidesdk/repos/libraries.db
@@ -34,11 +93,11 @@ que componen el repositorio, la estructura de la base de datos es ésta:
 - github.com/lidesdk/repos/stable.db
 
 
-================  ======================================================  ===================  ================  ======================================================================================================================
-  package_name      package_url                                             package_version      package_date      package_description  
-================  ======================================================  ===================  ================  ======================================================================================================================
- luasql            http://github.com/lidesdk/repos/libraries/luasql.zip    1.0.0.0              01/01/2017         LuaSQL is a simple interface from Lua to a DBMS. This package enables a Lua program to connect to SQLite databases.   
-================  ======================================================  ===================  ================  ======================================================================================================================
+================  ===================================================  ===================  ================  ===================================================
+  package_name      package_url                                          package_version      package_date      package_description  
+================  ===================================================  ===================  ================  ===================================================
+ luasql            http://github.com/lidesdk/repos/stable/luasql.zip    1.0.0.0              01/01/2017         LuaSQL is a simple interface from Lua to a DBMS.
+================  ===================================================  ===================  ================  ===================================================
 
 - **package_name**: Se trata del nombre del paquete, no debe tener espacios.
 
@@ -64,7 +123,6 @@ Adicionalmente también dentro del archivo zip se debe incluir un archivo .manif
 estructura del paquete, la información de la version, etc.
 
 .. code-block::
-
  - base64.zip:
    | 
    ├── base64.manifest
@@ -84,7 +142,8 @@ estructura del paquete, la información de la version, etc.
 Es el archivo más importante dentro del paquete ya que determina como debe instalarse el paquete, 
 siguiendo con el ejemplo del paquete base64, éste seria el archivo base64.manifest:
 
-.. code-block::
+
+.. code-block:: bash
 
  [base64]
  author    = luiz henrique de figueiredo
@@ -107,7 +166,7 @@ Para determinar qué archivos deben ser copiados al sistema tenemos los parametr
 
 **Ejemplo:** Por ejemplo si queremos agregar la libreria base64 tambien para arquitecturas x64, seria algo así:
 
-.. code-block::
+.. code-block:: bash
 
  [base64]
  author    = luiz henrique de figueiredo
@@ -116,6 +175,7 @@ Para determinar qué archivos deben ser copiados al sistema tenemos los parametr
  windows   = x86:windows/x86/clibs/base64.dll  |  x64:windows/x64/clibs/base64.dll
  linux     = x86:linux/x86/clibs/base64.dll    |  x64:linux/x64/clibs/base64.dll
  ...
+
 
 Si notamos se utiliza el caracter "|" como separador de archivos, adicionalmente se debe definir la
 arquitectura del sistema operativo.
