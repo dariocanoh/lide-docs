@@ -1,4 +1,4 @@
-.. /////// 2017/04/13 - Dario Cano (dcanoh [at] protonmail [dot] com)
+.. /////// 2017/04/13 - Dario Cano (Dario Cano [dcanohdev@gmail.com])
 .. // classes/widgets/controls/toolbar.rst
 .. //  Class Toolbar reference
 .. //   (c) 2017 Dario Cano | lide license
