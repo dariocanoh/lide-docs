@@ -157,6 +157,5 @@ Toolbar:getToolImageFilename
 
 ----------------------------------------------------------------------------------------------------
 
-
 .. // Required values for html docs visualization
-.. include:: ../types.rst
+.. include:: ../directives.rst  
