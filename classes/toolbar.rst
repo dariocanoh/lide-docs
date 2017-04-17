@@ -22,9 +22,30 @@ Toolbar class has a complex constructor:
 .. code-block:: lua
 
  object Toolbar:new {
- 		number ID, string Name,
- 		object Parent
- 	}
+      *number ID, string Name, object Parent,
+      *number Flags = TB_HORZ_TEXT
+ }
+
+
+Constructor flags
+^^^^^^^^^^^^^^^^^
+
+These are the flags received by class constructor.
+
+====================  ===========  ======================================================================================
+  Flag                 Value         Description
+====================  ===========  ======================================================================================
+ ``TB_FLAT``            ``32``       "flat" buttons (Win32/GTK only)
+ ``TB_HORIZONTAL``      ``4``        lay out the toolbar horizontally
+ ``TB_VERTICAL``        ``8``        lay out the toolbar vertically
+ ``TB_TEXT``            ``256``      show the text (not shown by default)
+ ``TB_NOICONS``         ``128``      don't show the icons (they're shown by default)
+ ``TB_NODIVIDER``       ``512``      don't show the divider between toolbar and the window (Win32 only)
+ ``TB_NOALIGN``         ``1024``     no automatic alignment (Win32 only, useless)
+ ``TB_HORZ_LAYOUT``     ``2048``     show the text and the icons alongside, not vertically stacked (Win32/GTK)
+ ``TB_HORZ_TEXT``       ``2304``     Combination of ``TB_HORZ_LAYOUT`` and ``TB_TEXT``
+====================  ===========  ======================================================================================
+
 
 ------------------------------------------------------------------------------------------------------
 
@@ -62,11 +83,11 @@ Toolbar:addTool
    
    Adds a tool to the toolbar.
 
-    *Returns a number*
+    *Returns a number: index of tool.*
 
-==========  ========================================================================================
- userdata    Toolbar:addTool( number_ nID, string_ sText, string_ sImage, string_ sTooltip )
-==========  ========================================================================================
+=========  =========================================================================================
+ number_    Toolbar:addTool( number_ nID, string_ sText, string_ sImage, string_ sTooltip )
+=========  =========================================================================================
 
 ----------------------------------------------------------------------------------------------------
 
