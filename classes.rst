@@ -16,7 +16,11 @@ These are the API classes.
 	classes/panel	
 	classes/control
 	
+	classes/toolbar
+	
 	classes/button
 
 	classes/textctrl
 	classes/textbox
+
+
