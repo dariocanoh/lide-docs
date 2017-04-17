@@ -23,6 +23,11 @@
 .. _Button:   ../classes/button.html
 .. _TextCtrl: ../classes/textctrl.html
 
+
+.. // Common GUI 
+
+.. _Window: ../classes/window.html
+
 .. // Define events:
 
 .. _Widget.onEnter:  ../classes/widget.onenter.html
