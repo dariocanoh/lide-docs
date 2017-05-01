@@ -1,6 +1,6 @@
-.. /////// 2016/02/07 - Dario Cano [thdkano@gmail.com]
-.. // classes/widget.onleave.rst
-.. //  Widget's event onLeave reference
+.. /////// 2016/02/07 - Hernan Dario Cano [dcanohdev@gmail.com]
+.. // classes/widget.onkeydown.rst
+.. //  Widget's event onKeyDown reference
 .. //   (c) 2016 Hernan Dario Cano | GNU GENERAL PUBLIC LICENSE
 
 Widget.onKeyDown
