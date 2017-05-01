@@ -51,6 +51,34 @@ These arguments are received by class constructor.
  Title         The caption of the window.
 ============  ======================================================================================
 
+
+Constructor flags
+^^^^^^^^^^^^^^^^^
+
+These are the flags received by class constructor.
+
+====================  =================  ======================================================================================
+  Flag                 Value               Description
+====================  =================  ======================================================================================
+  WIN_DEFAULT_STYLE     ``541072960``      Defined as WIN_MINIMIZE_BOX | WIN_MAXIMIZE_BOX | WIN_RESIZE_BORDER | WIN_SYSTEM_MENU | WIN_CAPTION | WIN_CLOSE_BOX | WIN_CLIP_CHILDREN.
+  WIN_ICONIZE           ``16384``          Display the frame iconized (minimized). Windows only.
+  WIN_CAPTION           ``536870912``      Puts a caption on the frame.
+  WIN_MINIMIZE          ``16384``          Identical to WIN_ICONIZE. Windows only. 
+  WIN_MINIMIZE_BOX      ``1024``           Displays a minimize box on the frame.
+  WIN_MAXIMIZE          ``8192``           Displays the frame maximized. Windows and GTK+ only.
+  WIN_MAXIMIZE_BOX      ``512``            Displays a maximize box on the frame.
+  WIN_CLOSE_BOX         ``4096``           Displays a close box on the frame.
+  WIN_STAY_ON_TOP       ``32768``          Stay on top of all other windows, see also WIN_FLOAT_ON_PARENT.
+  WIN_SYSTEM_MENU       ``2048``           Displays a system menu.
+  WIN_RESIZE_BORDER     ``64``             Displays a resizeable border around the window.
+  WIN_TOOL_WINDOW       ``4``              Causes a frame with a small titlebar to be created; the frame does not appear in the taskbar under Windows or GTK+.
+  WIN_NO_TASKBAR        ``2``              Creates an otherwise normal frame but it does not appear in the taskbar under Windows or GTK+ (note that it will minimize to the desktop window under Windows which may seem strange to the users and thus it might be better to use this style only without wxMINIMIZE_BOX style). In wxGTK, the flag is respected only if GTK+ is at least version 2.2 and the window manager supports _NET_WM_STATE_SKIP_TASKBAR hint. Has no effect under other platforms.
+  WIN_FLOAT_ON_PARENT   ``8``              The frame will always be on top of its parent (unlike WIN_STAY_ON_TOP). A frame created with this style must have a non-NULL parent.
+  WIN_EX_CONTEXTHELP    ``128```           Under Windows, puts a query button on the caption. When pressed, Windows will go into a context-sensitive help mode and wxWidgets will send a wxEVT_HELP event if the user clicked on an application window. Note that this is an extended style and must be set by calling SetExtraStyle before Create is called (two-step construction). You cannot use this style together with WIN_MAXIMIZE_BOX or WIN_MINIMIZE_BOX, so you should use WIN_DEFAULT_STYLE & ~ (WIN_MINIMIZE_BOX | WIN_MAXIMIZE_BOX) for the frames having this style (the dialogs don't have a minimize or a maximize box by default)
+  WIN_SHAPED            ``16``             Windows with this style are allowed to have their shape changed with the SetShape method.
+  WIN_EX_METAL          ``64``             On Mac OS X, frames with this style will be shown with a metallic look. This is an extra style.
+====================  ===========  ======================================================================================
+
 ----------------------------------------------------------------------------------------------------
 
 
