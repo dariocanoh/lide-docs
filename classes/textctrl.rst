@@ -41,7 +41,8 @@ The following events are emitted by this class:
 =========================  =========================================================================
  Widget.onEnter_             When the mouse moves onto this widget.
  Widget.onLeave_             When the mouse moves out to this widget.
- Button.onClick_             When the user clicks on this button.
+ Widget.onKeyDown_           When user press any key.
+ Widget.onKeyUp_             After key is pressed.
 =========================  =========================================================================
 
 ------------------------------------------------------------------------------------------------------
