@@ -77,7 +77,7 @@ These are the flags received by class constructor.
   WIN_EX_CONTEXTHELP    ``128```           Under Windows, puts a query button on the caption. When pressed, Windows will go into a context-sensitive help mode and wxWidgets will send a wxEVT_HELP event if the user clicked on an application window. Note that this is an extended style and must be set by calling SetExtraStyle before Create is called (two-step construction). You cannot use this style together with WIN_MAXIMIZE_BOX or WIN_MINIMIZE_BOX, so you should use WIN_DEFAULT_STYLE & ~ (WIN_MINIMIZE_BOX | WIN_MAXIMIZE_BOX) for the frames having this style (the dialogs don't have a minimize or a maximize box by default)
   WIN_SHAPED            ``16``             Windows with this style are allowed to have their shape changed with the SetShape method.
   WIN_EX_METAL          ``64``             On Mac OS X, frames with this style will be shown with a metallic look. This is an extra style.
-====================  ===========  ======================================================================================
+====================  =================  ======================================================================================
 
 ----------------------------------------------------------------------------------------------------
 

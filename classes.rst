@@ -5,7 +5,8 @@ These are the API classes.
 
 .. toctree::
 	:maxdepth: 1
-	
+	:caption: GUI Classes
+
 	classes/object
 	classes/event
 	classes/menu
@@ -15,12 +16,12 @@ These are the API classes.
 	
 	classes/panel	
 	classes/control
-	
+	classes/calendar
+
 	classes/toolbar
 	
 	classes/button
 
 	classes/textctrl
 	classes/textbox
-
 
