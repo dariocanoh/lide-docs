@@ -7,6 +7,9 @@ These are the API classes.
 	:maxdepth: 1
 	:caption: GUI Classes
 
+	classes/font
+	classes/color
+
 	classes/object
 	classes/event
 	classes/menu
