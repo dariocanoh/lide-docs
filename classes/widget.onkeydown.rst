@@ -1,13 +1,15 @@
 .. /////// 2016/02/07 - Dario Cano [thdkano@gmail.com]
 .. // classes/widget.onleave.rst
 .. //  Widget's event onLeave reference
-.. //   (c) 2016 Dario Cano | lide license
+.. //   (c) 2016 Hernan Dario Cano | GNU GENERAL PUBLIC LICENSE
 
 Widget.onKeyDown
 ^^^^^^^^^^^^^^^^
 
-   When any key has been pressed. If this event is handled and not skipped, onKeyChar will not be 
-   generated at all for this key press (but onKeyUp will be).
+   When any key has been pressed. 
+
+   If this event is handled and not skipped, Widget.onKeyChar_ will not be 
+   generated at all for this key press (but Widget.onKeyUp_ will be).
 
 ----------------------------------------------------------------------------------------------------
 
@@ -15,7 +17,7 @@ Prototype
 +++++++++
 
 ===========  =======================================================================================
- function_    onKeyHandler ( object_ event, nKeyCode )
+ function_    onKeyHandler ( object_ event, number_ nKeyCode )
 ===========  =======================================================================================      
 
 See :ref:`Event reference<EventREF>` for more info of Event prototying and referencing
