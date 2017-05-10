@@ -35,7 +35,7 @@ Control class has a single constructor:
  Calendar:new { 
     object Parent, string Name, 
     number PosX, number PosY, 
-    number Flags, 
+    number Flags = CAL_SHOW_HOLIDAYS
  }
 
 
@@ -44,22 +44,28 @@ Arguments
 
 These arguments are received by class constructor.
 
-============  ======================================================================================
+============  ===========================================================================================
   Argument     Description
-============  ======================================================================================
+============  ===========================================================================================
  Name          The control name
  Parent        The control parent
  PosX          Position related to X
  PosY          Position related to Y
- Flags         Possible style modificators:
-                - ``CAL_SUNDAY_FIRST`` Show Sunday as the first day in the week
-                - ``CAL_MONDAY_FIRST`` Show Monday as the first day in the week
-                - ``CAL_SHOW_HOLIDAYS`` Highlight holidays in the calendar
-                - ``CAL_NO_YEAR_CHANGE`` Disable the year changing
-                - ``CAL_NO_MONTH_CHANGE`` Disable the month (and, implicitly, the year) changing
-                - ``CAL_SHOW_SURROUNDING_WEEKS`` Show the neighbouring weeks in the previous and next months
-                - ``CAL_SEQUENTIAL_MONTH_SELECTION`` Use alternative, more compact, style for the month and year selection controls.
-============  ======================================================================================
+ Flags         Possible style modificators for Calendar control:
+
+               =====================================  ==========  =====================================
+                 constant                               value       description
+               =====================================  ==========  =====================================
+                ``CAL_SUNDAY_FIRST``                    ``0``       Show Sunday as the first day in the week
+                ``CAL_MONDAY_FIRST``                    ``1``       Show Monday as the first day in the week
+                ``CAL_SHOW_HOLIDAYS``                   ``2``       Highlight holidays in the calendar
+                ``CAL_NO_YEAR_CHANGE``                  ``4``       Disable the year changing
+                ``CAL_NO_MONTH_CHANGE``                 ``12``      Disable the month (and, implicitly, the year) changing
+                ``CAL_SHOW_SURROUNDING_WEEKS``          ``32``      Show the neighbouring weeks in the previous and next months
+                ``CAL_SEQUENTIAL_MONTH_SELECTION``      ``16``      Use alternative, more compact, style for the month and year selection controls.
+               =====================================  ==========  =====================================
+
+============  ===========================================================================================
 
 ------------------------------------------------------------------------------------------------------
 
@@ -109,6 +115,9 @@ Class Methods
 *************
 
 These methods are defined by this class.
+
+
+------------------------------------------------------------------------------------------------------
 
 
 Calendar:enableYearChange
