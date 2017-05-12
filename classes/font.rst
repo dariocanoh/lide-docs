@@ -44,7 +44,7 @@ Font class has a single constructor:
 
 .. code-block:: c++
 
- object Font:new ( string sEventName, object oEventSender, function fDefEventHandler )
+ object Font:new ( string EventName, object EventSender, function DefEventHandler )
 
 
 Arguments
@@ -52,13 +52,13 @@ Arguments
 
 These arguments are received by class constructor.
 
-============  ======================================================================================
-  Argument     Description
-============  ======================================================================================
- sEvtName      The event name
- oEvtSender    The object associated to the event (usually is a derived of "Widget_")
- fEvtHandler   The event handler function (that is called when you call `Event:call`).
-============  ======================================================================================
+==================  ======================================================================================
+  Argument            Description
+==================  ======================================================================================
+ EventName           The event name
+ EventSender         The object associated to the event (usually is a derived of "Widget_")
+ DefEventHandler     The event handler function (that is called when you call `Event:call`).
+==================  ======================================================================================
 
 ----------------------------------------------------------------------------------------------------
 
@@ -71,8 +71,6 @@ These methods are inherited from its super classes:
 =================  =================================================================================
   Class Method       Description
 =================  =================================================================================
- Object:getID_	    Returns event's identifier.
- Object:setID_	    Sets the event identifier.
  Object:getName_    Returns event's name.
  Object:setName_    Sets the event name.
 =================  =================================================================================
@@ -84,6 +82,9 @@ Class Methods
 *************
 
 These methods are defined by this class.
+
+
+----------------------------------------------------------------------------------------------------
 
 
 Font:getDescString
@@ -100,50 +101,12 @@ Font:getDescString
 
 Font:getBind
 ^^^^^^^^^^^^
-	
-   Get the binded object.
-
-=======  ============================================================================================
- bool_ 	  Event:setSender ( object oEvtSender )
-=======  ============================================================================================
-
-----------------------------------------------------------------------------------------------------
-
-
-Event:getBind
-^^^^^^^^^^^^^^^^^
    
-   Returns the event handler function (that is called when you call `Event:call`).
+   Returns a reference to the C++ control.
 
 ===========  =======================================================================================
- function_    Event:getHandler()
+ function_    Font:getBind()
 ===========  =======================================================================================
-
-----------------------------------------------------------------------------------------------------
-
-
-Event:setHandler
-^^^^^^^^^^^^^^^^
-  
-   Sets the event handler function.
-
-=======  ===========================================================================================
- bool_    Event:setSender ( object oEvtSender )
-=======  ===========================================================================================
-
-----------------------------------------------------------------------------------------------------
-
-
-Event:call
-^^^^^^^^^^
-  
-   Calls the event handler and pass it all the args.
-
-    *Returns one value: Returns first value what event handler sents.*
-
-=====  =============================================================================================
- ...    Event:call ( ... )
-=====  =============================================================================================
 
 -----------------------------------------------------------------------------------------------------
 
