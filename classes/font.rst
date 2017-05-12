@@ -44,7 +44,7 @@ Font class has a single constructor:
 
 .. code-block:: c++
 
- object Font:new ( string EventName, object EventSender, function DefEventHandler )
+ object Font:new ( string FaceName, number FontSize, string FontFlags )
 
 
 Arguments
@@ -55,9 +55,15 @@ These arguments are received by class constructor.
 ==================  ======================================================================================
   Argument            Description
 ==================  ======================================================================================
- EventName           The event name
- EventSender         The object associated to the event (usually is a derived of "Widget_")
- DefEventHandler     The event handler function (that is called when you call `Event:call`).
+ FaceName            The event name
+ FontSize            Size in points.
+ FontFlags           Font family, style and weight flags, values must be:
+
+                     - ``"Bold"``
+                     - ``"Underline"``
+                     - ``"Italic"``
+
+                     You can add this flags separated by comma: ``"Bold, Underline"``
 ==================  ======================================================================================
 
 ----------------------------------------------------------------------------------------------------
@@ -102,7 +108,7 @@ Font:getDescString
 Font:getBind
 ^^^^^^^^^^^^
    
-   Returns a reference to the C++ control.
+   Returns a reference to the C++ instance.
 
 ===========  =======================================================================================
  function_    Font:getBind()
