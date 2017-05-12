@@ -9,7 +9,7 @@ Calendar
 ========
 .. note::
 
-  Calendar is derived from :ref:`Control class<_ClassControl>`.
+  Calendar is derived from Control_ class.
 
 The calendar control allows the user to pick a date.
 

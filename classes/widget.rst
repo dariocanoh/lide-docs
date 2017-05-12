@@ -9,7 +9,7 @@ Widget
 ======
 .. note::
 
-  Widget is derived from :ref:`Object class<ClassObject>`.
+  Widget is derived from Object_ class
 
 Widget is the base class for all windows and represents any visible object on screen. All controls, 
 top level windows and so on are widgets.

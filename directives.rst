@@ -27,6 +27,7 @@
 .. // Common GUI 
 
 .. _Window: ../classes/window.html
+.. _Calendar: ..classes/calendar.html
 
 .. // Define events:
 
