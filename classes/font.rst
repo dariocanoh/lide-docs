@@ -57,8 +57,8 @@ Font class has two constructors:
 ==================  ======================================================================================
   Argument            Description
 ==================  ======================================================================================
- FaceName            The event name
- FontSize            Size in points.
+ FaceName            The font face name
+ FontSize            Font size in points.
  FontFlags           Font family, style and weight flags, values must be:
 
                      - ``"Bold"``
@@ -79,8 +79,8 @@ These methods are inherited from its super classes:
 =================  =================================================================================
   Class Method       Description
 =================  =================================================================================
- Object:getName_    Returns event's name.
- Object:setName_    Sets the event name.
+ Object:getName_    Returns font's name.
+ Object:setName_    Sets the font name.
 =================  =================================================================================
 
 ----------------------------------------------------------------------------------------------------
@@ -101,7 +101,7 @@ Font:getDescString
    Gets the font description.
 
 =========  =========================================================================================
- string_    Event:getDescString()
+ string_    Font:getDescString()
 =========  =========================================================================================
 
 ----------------------------------------------------------------------------------------------------
