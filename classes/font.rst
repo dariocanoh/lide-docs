@@ -49,6 +49,8 @@ Font class has two constructors:
   DescriptionString     String that represent a font.
 ====================  ======================================================================================
 
+----------------------------------------------------------------------------------------------------
+
 .. code-block:: lua
 
  object Font:new ( string FaceName, number FontSize, string FontFlags )
@@ -61,11 +63,7 @@ Font class has two constructors:
  	number FontSize  = 12,
  }
 
-These arguments are received by class constructor.
-
-==================  ======================================================================================
-  Argument            Description
-==================  ======================================================================================
+================  ======================================================================================
  FaceName            The event name
  FontSize            Size in points.
  FontFlags           Font family, style and weight flags, values must be:
