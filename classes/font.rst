@@ -39,12 +39,19 @@ Windows machine or other platform.
 Constructor
 ***********
 
-Font class has a single constructor:
+Font class has two onstructors:
 
-
-.. code-block:: c++
+.. code-block:: lua
 
  object Font:new ( string FaceName, number FontSize, string FontFlags )
+
+.. code-block:: lua
+
+ object Font:new { 
+ 	string FaceName  = 'Calibri', 
+ 	string FontFlags = 'Bold'
+ 	number FontSize  = 12,
+ }
 
 
 Arguments
