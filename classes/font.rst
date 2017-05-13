@@ -39,7 +39,15 @@ Windows machine or other platform.
 Constructor
 ***********
 
-Font class has two onstructors:
+Font class has two constructors:
+
+.. code-block:: lua
+
+ object Font:new ( string DescriptionString )
+
+====================  ======================================================================================
+  DescriptionString     String that represent a font.
+====================  ======================================================================================
 
 .. code-block:: lua
 
@@ -52,10 +60,6 @@ Font class has two onstructors:
  	string FontFlags = 'Bold'
  	number FontSize  = 12,
  }
-
-
-Arguments
-^^^^^^^^^
 
 These arguments are received by class constructor.
 
