@@ -16,6 +16,8 @@ These are the API classes.
 
 	classes/widget
 	classes/window
+	classes/form
+	classes/dialog
 	
 	classes/panel	
 	classes/control
