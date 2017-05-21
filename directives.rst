@@ -26,7 +26,14 @@
 
 .. // Common GUI 
 
+.. // window_class_directives.rst:
+
 .. _Window: ../classes/window.html
+.. _Window.onShow:   ../classes/window.onshow.html
+.. _Window.onClose:  ../classes/window.onclose.html
+
+.. //////////////////////////////
+
 .. _Calendar: ..classes/calendar.html
 
 .. // Define events:

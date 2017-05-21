@@ -1,7 +1,7 @@
-.. /////// 2016/03/01 - Dario Cano [thdkano@gmail.com]
+.. /////// 2016/03/01 - Hernan Dario Cano [dcanohdev@gmail.com]
 .. // classes/widgets/Form.rst
 .. //  Class Form reference
-.. //   (c) 2016 Dario Cano | lide license
+.. //   (c) 2016 Hernan Dario Cano | GNU GENERAL PUBLIC LICENSE
 
 .. _ClassForm:
 
@@ -22,8 +22,8 @@ Form class has a complex constructor:
 
 ::
 
-  Form:new {
-     number ID, string Name, 
+  Form:new { 
+     string Name, string Title,
      
      number PosX  , number PosY,
      number Width , number Height,
@@ -36,17 +36,31 @@ Arguments
 These arguments are received by class constructor.
 
 ============  ======================================================================================
-  Argument     Description
+ Argument      Description
 ============  ======================================================================================
- ID            The object identificator 
- Name          The object's name
- PosX          Position related to X
- PosY          Position related to Y
- Width         Width of the widget
- Height        Height of the widget
+ Name          The form's name
+ PosX          Position related to X on Screen or Parent object
+ PosY          Position related to X on Screen or Parent object
+ Width         Width of the form
+ Height        Height of the form
 ============  ======================================================================================
 
 ----------------------------------------------------------------------------------------------------
+
+Events
+******
+
+The following events are emitted by this class:
+
+============================  =========================================================================
+  Event name                    Description
+============================  =========================================================================
+ Form.onShow_                   When the form is shown.
+ Form.onClose_                  When the form is closed.
+============================  =========================================================================
+
+----------------------------------------------------------------------------------------------------
+
 
 Class Methods
 *************
@@ -55,32 +69,17 @@ These methods are defined by this class.
 
 ----------------------------------------------------------------------------------------------------
 
-xxxx
-^^^^^^^^^^^^^
+Form:getFocusedObject()
+^^^^^^^^^^^^^^^^^^^^^^^
 
-  xxxxx
+  Returns focused object.
 
-======  ============================================================================================
- nil_    xxxxxx
-======  ============================================================================================
+=========  =========================================================================================
+ object_    Form:getFocusedObject()
+=========  =========================================================================================
  
 ----------------------------------------------------------------------------------------------------
 
-
-Events
-******
-
-The following events are emitted by this class:
-
-==============================  ====================================================================
-  Event name                      Description
-==============================  ====================================================================
- :ref:`Widget_onEnter`           When the mouse moves onto this widget
- :ref:`Widget_onLeave`	         When the mouse leaves the widget
- :ref:`Window_onShow`            When the Window is shown.
-==============================  ====================================================================
-
-----------------------------------------------------------------------------------------------------
 
 Example
 *******
@@ -103,3 +102,5 @@ In this example we create a new Form ...
 
 .. // Required values for html docs visualization
 .. include:: ../directives.rst
+.. _Form.onShow:  Window.onShow_
+.. _Form.onClose:  Window.onClose_
