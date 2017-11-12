@@ -8,19 +8,19 @@
 
 .. toctree::
 	:hidden:
-	:caption: OOP Model
+	:caption: Lua Object Oriented
 
 	./oop-intro
 	./access_modifiers
-	./oop/class_methods
 
 .. toctree::
-	:hidden:
-	:caption: API Reference
+        :hidden:
+        :caption: API Reference
 
-	./types
-	./classes/
-	./events/
+        ./modules/lide.class
+        ./modules/lide.platform
+
+        ./modules/lide.widgets
 
 .. toctree::
 	:hidden:

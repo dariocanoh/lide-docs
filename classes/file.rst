@@ -3,35 +3,19 @@
 .. //  Class Font reference
 .. //   (c) 2017 Hernan Dario Cano | GNU GENERAL PUBLIC LICENSE
 
-.. _ClassFont:
+.. _ClassFile:
 
-Font
+File
 ====
-.. note::
 
-  Font is derived from :ref:`Object class<ClassObject>`.
-
-A font is an object which determines the appearance of text, primarily when drawing text to a window 
-or device context.
-
-A font is determined by the following parameters (not all of them have to be specified, of course):
-
-Specifying a family, rather than a specific typeface name, ensures a degree of portability across 
-platforms because a suitable font will be chosen for the given font family, however it doesn't allow 
-to choose a font precisely as the parameters above don't suffice, in general, to identify all the 
-available fonts and this is where using the native font descriptions may be helpful - see below.
-
-Under Windows, the face name can be one of the installed fonts on the user's system. Since the choice 
-of fonts differs from system to system, either choose standard Windows fonts, or if allowing the user 
-to specify a face name, store the family name with any file that might be transported to a different 
-Windows machine or other platform.
-
-.. note::
- There is currently a difference between the appearance of fonts on the two platforms, if the mapping 
- mode is anything other than (`wxMM_TEXT <http://docs.wxwidgets.org/3.1.0/interface_2wx_2dc_8h.html#a5a641b839b9ac2ff94514d0596f6e20aa7cb493f78fed283bdc4d3e0797400df6>`_).
- Under X, font size is always specified in points. Under MS Windows, the unit for text is points but 
- the text is scaled according to the current mapping mode. However, user scaling on a device context 
- will also scale fonts under both environments.
+An abstract representation of file and directory pathnames. 
+User interfaces and operating systems use system-dependent pathname strings to name files and 
+directories. This class presents an abstract, system-independent view of hierarchical pathnames. 
+An abstract pathname has two components: 
+An optional system-dependent prefix string, such as a disk-drive specifier, "/" for the UNIX root 
+directory, or "\\\\" for a Microsoft Windows UNC pathname, and a sequence of zero or more string names. 
+The first name in an abstract pathname may be a directory name or, in the case of Microsoft Windows 
+UNC pathnames, a hostname.
  
 ----------------------------------------------------------------------------------------------------
 
@@ -39,33 +23,17 @@ Windows machine or other platform.
 Constructor
 ***********
 
-Font class has two constructors:
+File class constructors:
 
 .. code-block:: lua
 
- object Font:new ( string FaceName, number FontSize, string FontFlags )
-
-.. code-block:: lua
-
- object Font:new { 
- 	string FaceName  = 'Calibri', 
- 	string FontFlags = 'Bold'
- 	number FontSize  = 12,
- }
+ object Font:new ( string filePath )
 
 
 ==================  ======================================================================================
   Argument            Description
 ==================  ======================================================================================
- FaceName            The font face name
- FontSize            Font size in points.
- FontFlags           Font family, style and weight flags, values must be:
-
-                     - ``"Bold"``
-                     - ``"Underline"``
-                     - ``"Italic"``
-
-                     You can add this flags separated by comma: ``"Bold, Underline"``
+ filePath            Creates a new File instance that represents actually string filePath.
 ==================  ======================================================================================
 
 ----------------------------------------------------------------------------------------------------
@@ -113,7 +81,7 @@ Font:getBind
    Returns a reference to the C++ instance.
 
 ===========  =======================================================================================
- userdata_    Font:getBind()
+ function_    Font:getBind()
 ===========  =======================================================================================
 
 -----------------------------------------------------------------------------------------------------
