@@ -16,6 +16,7 @@ lide.widgets
     Font = lide.widgets.font
     Button lide.widgets.button
 
+
 .. toctree::
 	:maxdepth: 1
 	:caption: GUI Classes
@@ -32,16 +33,19 @@ lide.widgets
 	../classes/form
 	../classes/dialog
 	
-	../classes/panel	
-	../classes/control
-	../classes/calendar
-
+	../classes/panel
 	../classes/toolbar
 	
-	../classes/button
+	../classes/control
 
-	../classes/textctrl
-	../classes/textbox
+	../classes/button
+	../classes/label
+	../classes/image
+	../classes/listbox
+	../classes/combobox
+	../classes/progress
+	../classes/calendar
+
 
 .. toctree::
 	:maxdepth: 1
@@ -52,3 +56,4 @@ lide.widgets
 	../classes/widget.onkeydown
 	../classes/widget.onkeyup
 	../classes/button.onclick
+	
