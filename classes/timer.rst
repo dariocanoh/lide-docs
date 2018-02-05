@@ -31,7 +31,7 @@ Timer class has a single constructor:
 
 .. code-block:: lua
 
-   Timer:new ( number_ nTimerID, function_ fTimerHandler )
+   Timer:new ( number nTimerID, function fTimerHandler )
 
 
 Arguments

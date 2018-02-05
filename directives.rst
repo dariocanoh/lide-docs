@@ -38,7 +38,6 @@
 .. _Window.onClose:  ../classes/window.onclose.html
 
 .. _Button:         ../classes/button.html
-.. _Button.onClick: ../classes/button.onclick.html
 
 .. _Label:    ..classes/label.html
 .. _Image:    ..classes/image.html
