@@ -148,7 +148,7 @@ Window:centre
 Window:show
 ^^^^^^^^^^^
 
-	Shows the Window. Returns true if the window has been shown or hidden or false if nothing was done 
+  Shows the Window. Returns true if the window has been shown or hidden or false if nothing was done 
   because it already was in the requested state.
 
 =======  ===========================================================================================
@@ -351,7 +351,6 @@ In this example we create a new window ...
 
 .. code-block:: lua
    :linenos:
-   :emphasize-lines:3,5
     
     myWnd = Window:new {
     	ID = 100, Name = "MyWindow",

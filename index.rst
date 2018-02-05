@@ -19,7 +19,7 @@
 
         ./modules/lide.class
         ./modules/lide.platform
-
+        ./modules/lide.core.error
         ./modules/lide.widgets
 
 .. toctree::

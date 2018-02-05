@@ -37,7 +37,7 @@ lide.error.try
   an error.
 
 ======  ==============================================================
- nil_    lide.error.try ( func_ try_code )
+ nil_    lide.error.try ( function_ try_code )
 ======  ==============================================================
 
 ----------------------------------------------------------------------
@@ -50,7 +50,7 @@ lide.error.catch
   executed in case of error.
 
 ======  ==============================================================
- nil_    lide.error.catch ( func_ catch_code ( Exception_ exception ) )
+ nil_    lide.error.catch ( function_ catch_code ( Exception_ exception ) )
 ======  ==============================================================
 
 ----------------------------------------------------------------------
@@ -62,7 +62,7 @@ lide.error.finally
   ``Optional`` Here we should put cleaning code
 
 ======  ==============================================================
- nil_ 	  lide.error.finally ( func_ finally_code )
+ nil_ 	  lide.error.finally ( function_ finally_code )
 ======  ==============================================================
 
 

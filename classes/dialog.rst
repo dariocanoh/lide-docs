@@ -74,7 +74,6 @@ In this example we create a new Dialog ...
 
 .. code-block:: lua
    :linenos:
-   :emphasize-lines: 2-4
     
     myWnd = Dialog:new { Name = "MyDialog",
     	Title  = "YOUR NEW Dialog",

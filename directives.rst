@@ -3,9 +3,6 @@
 .. //  ...
 .. //   (c) 2015 Dario Cano | lide license
 
-.. _Event:    ../classes/event.html
-.. _EventREF: ../classes/event_reference.html
-
 .. _void:     ../types.html # nil-type
 .. _nil:      ../types.html # nil-type
 .. _object:   ../types.html # object-type
@@ -18,10 +15,18 @@
 
 
 .. // _Object:   ../classes/object.html
-.. _Font:  	  ../classes/font.html
-.. _Widget:   ../classes/widget.html
-.. _Control:  ../classes/control.html
-.. _TextCtrl: ../classes/textctrl.html
+.. _Event:     ../classes/event.html
+
+.. _Exception: ../classes/exception.html
+
+.. _Font:  	          ../classes/font.html
+.. _Widget:           ../classes/widget.html
+.. _Widget.onEnter:	  ../classes/widget.onenter.html
+.. _Widget.onLeave:	  ../classes/widget.onleave.html
+
+
+.. _Control:   ../classes/control.html
+.. _TextCtrl:  ../classes/textctrl.html
 
 
 .. // Common GUI 
@@ -32,9 +37,9 @@
 .. _Window.onShow:   ../classes/window.onshow.html
 .. _Window.onClose:  ../classes/window.onclose.html
 
-.. //////////////////////////////
+.. _Button:         ../classes/button.html
+.. _Button.onClick: ../classes/button.onclick.html
 
-.. _Button:   ../classes/button.html
 .. _Label:    ..classes/label.html
 .. _Image:    ..classes/image.html
 .. _Listbox:  ..classes/listbox.html
@@ -44,11 +49,7 @@
 
 .. // Define events:
 
-.. _Widget.onEnter:    ../classes/widget.onenter.html
-.. _Widget.onLeave:    ../classes/widget.onleave.html
-.. _Widget.onKeyDown:  ../classes/widget.onkeydown.html
 
-.. _Button.onClick:	   ../classes/button.onclick.html
 
 
 .. // Define virtual methods:

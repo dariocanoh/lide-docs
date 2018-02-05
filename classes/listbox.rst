@@ -155,9 +155,6 @@ Listbox:setSelection
 	Note that this does not cause any command events to be emitted nor does it deselect any other 
 	items in the controls which support multiple selections.
 
-	**Parameters**
-    nSelect		   The string position to select, starting from zero.
-
 ======  ============================================================================================
  nil_ 	 Listbox:setSelection( number_ nSelect )
 ======  ============================================================================================
@@ -174,8 +171,8 @@ Listbox:getSelection
 
 	.. note::
     	
-  This method can be used with single selection list boxes only, you should use 
-  ``Listbox:getSelections()`` for the listboxes with ``LB_MULTIPLE`` style.
+   This method can be used with single selection list boxes only, you should use 
+   ``Listbox:getSelections()`` for the listboxes with ``LB_MULTIPLE`` style.
 
 =========  =========================================================================================
  number_ 	Listbox:getSelection()
@@ -188,9 +185,6 @@ Listbox:isSelected
 ^^^^^^^^^^^^^^^^^^
 	
 	Determines whether an item is selected.
-
-	**Parameters**
-	  nItem			The zero-based item index.
 
 	*Returns: true if the given item is selected, false otherwise*
 
@@ -206,13 +200,10 @@ Listbox:getString
 	
 	Returns the label of the item with the given index.
 
-	**Parameters**
-    nItem    		  The numeric index.
-
 	*Returns: The label of the item or an empty string if the position was invalid*
 
 =========  =========================================================================================
- string_ 	Listbox:getString( number_ nItem )
+ string_ 	  Listbox:getString( number_ nItem )
 =========  =========================================================================================
 
 ----------------------------------------------------------------------------------------------------

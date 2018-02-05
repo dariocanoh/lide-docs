@@ -8,6 +8,7 @@ operations that are permitted for those entities and provides semantic meaning t
 generic sequences of bits. 
 
 ----------------------------------------------------------------------------------------------------
+
 .. _nil:
 
 Nil type
@@ -52,6 +53,7 @@ Examples of valid numeric constants are:
     4     0.4     4.57e-3     0.3e12     5e+20
 
 ----------------------------------------------------------------------------------------------------
+
 .. _table:
 
 Table type
@@ -74,8 +76,8 @@ copies or creation of new tables behind the scenes. Moreover, you do not have to
 in fact, there is no way to declare one. You create tables by means of a constructor expression, which 
 in its simplest form is written as {}.
 
-
 ----------------------------------------------------------------------------------------------------
+
 .. _string:
 
 String type
@@ -99,8 +101,8 @@ do not have to worry about allocation and deallocation of strings; Lua handles t
 may contain a single letter or an entire book. Lua handles long strings quite efficiently. Programs 
 that manipulate strings with 100K or 1M characters are not unusual in Lua. 
 
-
 ----------------------------------------------------------------------------------------------------
+
 .. _object:
 
 Object Type

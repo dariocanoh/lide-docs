@@ -63,19 +63,5 @@ These methods are inherited from its super classes:
 
 ----------------------------------------------------------------------------------------------------
 
-
-Events
-******
-
-The following events are emitted by this class:
-
-.. toctree::
-    :hidden:
-    
-	classes/widget.onenter
-    classes/widget.onleave
-
-----------------------------------------------------------------------------------------------------
-
 .. // Required values for html docs visualization
 .. include:: ../directives.rst

@@ -22,7 +22,6 @@ lide.widgets
 	:caption: GUI Classes
 
 	../classes/font
-	../classes/color
 
 	../classes/object
 	../classes/event
@@ -42,5 +41,5 @@ lide.widgets
 	../classes/label
 	../classes/image
 	../classes/listbox
-	../classes/progress
 	../classes/calendar
+	../classes/textbox

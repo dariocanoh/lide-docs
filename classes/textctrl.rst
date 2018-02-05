@@ -42,7 +42,6 @@ The following events are emitted by this class:
  Widget.onEnter_             When the mouse moves onto this widget.
  Widget.onLeave_             When the mouse moves out to this widget.
  Widget.onKeyDown_           When user press any key.
- Widget.onKeyUp_             After key is pressed.
 =========================  =========================================================================
 
 ------------------------------------------------------------------------------------------------------
@@ -155,7 +154,7 @@ TextCtrl:xyToPosition
 	
 	Converts the given zero based column and line number to a position.
 
-	*Returns: number_: The position value, or -1 if nX or nY was invalid. *
+	*Returns: number_: The position value, or -1 if nX or nY was invalid*
 
 
 =========  =========================================================================================
@@ -232,14 +231,14 @@ TextCtrl:getNumberOfLines
 	
 	Returns the number of lines in the text control buffer.
 
-	*Remarks
+	**Remarks:**
 
 	Note that even empty text controls have one line (where the insertion point is), so GetNumberOfLines() 
 	never returns 0.
 
 	Also note that you may wish to avoid using functions that work with line numbers if you are 
 	working with controls that contain large amounts of text as this function has O(N) complexity 
-	for N being the number of lines.*
+	for N being the number of lines.
 
 =========  =========================================================================================
  number_ 	TextCtrl:getNumberOfLines()
@@ -616,14 +615,14 @@ TextCtrl:writeText
 	
 	Writes the text into the text control at the current insertion position.
 	
-	*Remarks:
+	**Remarks:**
 
 	Newlines in the text string are the only control characters allowed, and they will cause appropriate 
 	line breaks. See wxTextCtrl::appendText for more convenient ways of writing to the window.
    
     After the write operation, the insertion point will be at the end of the inserted text, so 
 	subsequent write operations will be appended. To append text after the user may have interacted 
-	with the control, call wxTextCtrl::SetInsertionPointEnd before writing.*
+	with the control, call wxTextCtrl::SetInsertionPointEnd before writing.
 
 =======  ===========================================================================================
  void_ 	  TextCtrl:writeText( string_ sText )

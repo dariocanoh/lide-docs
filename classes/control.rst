@@ -33,17 +33,17 @@ Arguments
 
 These arguments are received by class constructor.
 
-============  ======================================================================================
-  Argument     Description
-============  ======================================================================================
- sControlName  The control name
- oParent       The control parent
- nPosX         Position related to X
- nPosY         Position related to Y
- nWidth        Width of the control
- nHeight       Height of the control
- nID           The object identificator 
-============  ======================================================================================
+==============  ====================================================================================
+  Argument       Description
+==============  ====================================================================================
+ sControlName    The control name
+ oParent         The control parent
+ nPosX           Position related to X
+ nPosY           Position related to Y
+ nWidth          Width of the control
+ nHeight         Height of the control
+ nID             The object identificator 
+==============  ====================================================================================
 
 
 ----------------------------------------------------------------------------------------------------

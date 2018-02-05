@@ -99,7 +99,6 @@ In this example we create a new Form ...
 
 .. code-block:: lua
    :linenos:
-   :emphasize-lines: 4,9
     
     myWnd = Form:new { Name = "MyForm",
     	

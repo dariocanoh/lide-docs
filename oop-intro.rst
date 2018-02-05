@@ -56,6 +56,7 @@ An example can illustrate better:
   
   -- 'Student' is another subclass of 'Human'
   Student = Human:subclass("Student")
+
 ----------------------------------------------------------------------
 
 
@@ -81,6 +82,7 @@ To define our constructors, we can do:
       self.super:init(name, year) --> calls the superclass constructor
       self.title = title
    end
+
 ----------------------------------------------------------------------
 
 .. important::
@@ -105,6 +107,7 @@ Methods can be defined in a very simple way:
   function Engineer:Read( book )
       print("Reading: ”..book)
   end
+
 ----------------------------------------------------------------------
 
 
@@ -131,6 +134,7 @@ you define the methods:
   function Engineer:__tostring()
       return “A Engineer of “.. self.titulo .. “ called: ” .. self.nombre .. “, have “ .. self.edad .. “ years old.”
   end
+
 ----------------------------------------------------------------------
 
 Any event can be used, except and ``__newindex`` ``__index`` which are 
@@ -153,6 +157,7 @@ arguments we pass to this method are passed to the constructor:
 
   Anthony = Human:new (“Anthony”, 33)
   Camila  = Engineer:new (“Camila”, 21, “Electronica”)
+
 ----------------------------------------------------------------------
 
 The result is the same as if you "called" classes directly:
@@ -161,6 +166,7 @@ The result is the same as if you "called" classes directly:
 
   Julieth = Human (“Julieth”, 13)
   Jefferson = Engineer (“Jefferson”, 23, “Sistemas”)
+
 ----------------------------------------------------------------------
 
 
@@ -240,6 +246,7 @@ This generally allows access to static variables in classes, for example:
   prints(a.test)        -- prints 5
   prints(A.test)        -- prints nil (!)
   prints(A.static.test) -- prints 5
+
 ----------------------------------------------------------------------
 
 
@@ -275,6 +282,7 @@ written out of any method, and before the method definition:
     -- no need to use B:virtual() here
   myB = B()
   myB:test() -- prints "B"
+
 ----------------------------------------------------------------------
 
 With this it is also possible to declare some methods as abstract 
@@ -343,6 +351,7 @@ in the hierarchy:
     self.doSomething()
     print(self.x)       -- prints "0": 'x' has been modified by A because A defined it first
   end
+
 ----------------------------------------------------------------------
 
 
@@ -388,6 +397,7 @@ Let's see this example with a small change in ``B:init()``:
     print(self.x)       -- prints "5": 'x' has not been modified by A
     print(self.super.x) -- prints "0": this is the 'x' attribute that was used by A
   end
+
 ----------------------------------------------------------------------
 
 As you can see the different behaviors of the attributes ``X`` and ``Y`` 
