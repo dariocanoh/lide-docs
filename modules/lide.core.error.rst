@@ -31,7 +31,7 @@ lide.error
 
 
 lide.error.try
-^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^
    
   Within this function we will put the piece of code that could have 
   an error.
@@ -44,7 +44,7 @@ lide.error.try
 
 
 lide.error.catch
-^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^
   
   ``Optional`` Within this function we will put the code that will be 
   executed in case of error.
@@ -57,7 +57,7 @@ lide.error.catch
 
 
 lide.error.finally
-^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^
 	
   ``Optional`` Here we should put cleaning code
 
@@ -67,4 +67,4 @@ lide.error.finally
 
 
 .. // Required values for html docs visualization
-.. include:: ./directives.rst
+.. include:: ../directives.rst
