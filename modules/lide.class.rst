@@ -26,6 +26,18 @@ OOP Lua model resources:
 - `See Encapsulation and modifiers <../access_modifiers.html>`_.
 
 
+Framework Classes
+*****************
+
+.. toctree::
+  :maxdepth: 1
+  
+  ../classes/object
+  ../classes/exception
+  ../classes/date
+
+----------------------------------------------------------------------
+
 Lua Class Methods
 *****************
 
