@@ -1,7 +1,7 @@
 .. /////// 2017/04/27 - Hernan Dario Cano [dcanohdev@gmail.com]
 .. // docs/classes/widgets/controls/calendar.rst
 .. //  Class Font reference
-.. //   (c) 2017 Hernan Dario Cano | GNU GENERAL PUBLIC LICENSE
+.. //   (c) 2017 Hernan Dario Cano | Lide Framework License
 
 .. _ClassCalendar:
 
@@ -35,7 +35,7 @@ Control class has a single constructor:
  Calendar:new { 
     object Parent, string Name, 
     number PosX, number PosY, 
-    number Flags = CAL_SHOW_HOLIDAYS
+    number Flags = CAL_SHOW_HOLIDAYS + CAL_MONDAY_FIRST
  }
 
 
