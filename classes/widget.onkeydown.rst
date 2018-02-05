@@ -20,8 +20,6 @@ Prototype
  function_    onKeyHandler ( object_ event, number_ nKeyCode )
 ===========  =======================================================================================      
 
-See :ref:`Event reference<EventREF>` for more info of Event prototying and referencing
-
 ----------------------------------------------------------------------------------------------------
 
 Example

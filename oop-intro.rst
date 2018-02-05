@@ -98,7 +98,7 @@ Methods
 
 Methods can be defined in a very simple way:
 
-.. code-block:: lua 
+.. code-block::
 
   function Human:Greet()
       return "Hello World";
@@ -125,7 +125,7 @@ language reference.
 You can also define events for the class instances, in the same way 
 you define the methods:
 
-.. code-block:: lua
+.. code-block::
   
   function Human:__tostring ()
       return “a Human called: ” .. self.nombre .. “, have “ .. self.edad .. “ years old.”
@@ -153,7 +153,7 @@ Instantiation
 Every class has the ``:new()`` method, used for instantiation. All the 
 arguments we pass to this method are passed to the constructor:
 
-.. code-block:: lua
+.. code-block::
 
   Anthony = Human:new (“Anthony”, 33)
   Camila  = Engineer:new (“Camila”, 21, “Electronica”)
@@ -162,7 +162,7 @@ arguments we pass to this method are passed to the constructor:
 
 The result is the same as if you "called" classes directly:
 
-.. code-block:: lua
+.. code-block::
 
   Julieth = Human (“Julieth”, 13)
   Jefferson = Engineer (“Jefferson”, 23, “Sistemas”)
@@ -203,7 +203,7 @@ your class (and its superclasses). They also have a ``:class()`` method
 that returns the class, and ``.super`` field that is used to access 
 the superclass if you overwrote the method, see:
 
-.. code-block:: lua
+.. code-block::
 
   A = newclass("A")
   function A:test() print(self.a) end
@@ -235,7 +235,7 @@ table ``static``; in this way we will not mix the methods of classes
 with class services. This table is accessible via the ``static`` field. 
 This generally allows access to static variables in classes, for example:
 
-.. code-block:: lua
+.. code-block::
 
   A = newclass("A")
   function A:init(a) self.a = a end
@@ -260,7 +260,7 @@ To declare a method as virtual you have to declare explicitly using the
 ``:virtual()`` in its class. The call to ``:virtual()`` should be 
 written out of any method, and before the method definition:
 
-.. code-block:: lua
+.. code-block::
 
   A = newclass("A")
 
@@ -294,7 +294,7 @@ the hierarchy.
 
 Example here:
 
-.. code-block:: lua
+.. code-block::
 
   A = newclass("A")
 
@@ -325,7 +325,7 @@ defined by their (s) type (s) father. This can lead to some confusion
 when defining attributes that share the same name at different levels 
 in the hierarchy:
 
-.. code-block:: lua
+.. code-block::
 
   A = newclass("A")
 
@@ -372,7 +372,7 @@ calling the constructor of its superclass.
 
 Let's see this example with a small change in ``B:init()``:
 
-.. code-block:: lua
+.. code-block::
 
   A = newclass("A")
   function A:init()
@@ -423,7 +423,7 @@ be done with the ``:cast()`` and ``:trycast()`` of all kinds.
 
 Here's a simple example:
 
-.. code-block:: lua
+.. code-block::
 
   A = newclass("A")
   function A:foo()

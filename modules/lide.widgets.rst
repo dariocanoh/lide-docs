@@ -16,6 +16,11 @@ lide.widgets
     Font = lide.widgets.font
     Button lide.widgets.button
 
+.. toctree::
+	:maxdepth: 1
+	:caption: Registered Classes
+
+	../classes/timer
 
 .. toctree::
 	:maxdepth: 1

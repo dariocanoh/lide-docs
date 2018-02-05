@@ -1,7 +1,7 @@
-.. /////// 2016/02/07 - Dario Cano [thdkano@gmail.com]
+.. /////// 2016/02/07 - Hernan Dario Cano [dcanohdev@gmail.com]
 .. // classes/button.onclick.rst
 .. //  Reference to onClick event of Button class.
-.. //   (c) 2015 Dario Cano | lide license
+.. //   (c) 2015 Hernan Dario Cano | lide license
 
 .. _Button.onClick:
 
@@ -19,8 +19,6 @@ Prototype
 ===========  =======================================================================================
  function_    onClickHandler ( object_ event )
 ===========  =======================================================================================
-
-See :ref:`Event reference<EventREF>` for more info of Event prototying and referencing
 
 ----------------------------------------------------------------------------------------------------
 

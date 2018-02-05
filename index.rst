@@ -8,6 +8,12 @@
 
 .. toctree::
 	:hidden:
+	:caption: Lua Language
+
+	../types.rst
+
+.. toctree::
+	:hidden:
 	:caption: Lua Object Oriented
 
 	./oop-intro
@@ -29,4 +35,4 @@
 	./make_window
 
 .. // Required values for html docs visualization
-.. include:: ../directives.rst
+.. include:: ./directives.rst

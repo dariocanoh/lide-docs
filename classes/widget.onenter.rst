@@ -20,8 +20,6 @@ Prototype
  function_    onEnterHandler ( object_ event )
 ===========  =======================================================================================
 
-See :ref:`Event reference<EventREF>` for more info of Event prototying and referencing
-
 ----------------------------------------------------------------------------------------------------
 
 Example

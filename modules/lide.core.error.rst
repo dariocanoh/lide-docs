@@ -8,7 +8,7 @@
 lide.error
 ==========
   
-  ``[lide.core] ^0.02``
+  ``[lide.core] ^0.01``
 
   This module is loaded with ``lide.core`` it's part of framework into
   the ``lide.error`` module we will find the necessary functions to 

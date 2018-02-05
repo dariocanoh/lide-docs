@@ -22,8 +22,8 @@ lide.class
 
 OOP Lua model resources:
 
-- `See Class reference <oop-intro.rst>`_.
-- `See Encapsulation and modifiers <access_modifiers.rst>`_.
+- `See Class reference <../oop-intro.html>`_.
+- `See Encapsulation and modifiers <../access_modifiers.html>`_.
 
 
 Lua Class Methods
