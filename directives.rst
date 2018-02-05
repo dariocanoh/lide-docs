@@ -48,7 +48,7 @@
 .. _Widget.onLeave:    ../classes/widget.onleave.html
 .. _Widget.onKeyDown:  ../classes/widget.onkeydown.html
 
-.. _Button.onClick:	 ../classes/button.onclick.html
+.. _Button.onClick:	   ../classes/button.onclick.html
 
 
 .. // Define virtual methods:

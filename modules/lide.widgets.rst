@@ -44,14 +44,3 @@ lide.widgets
 	../classes/listbox
 	../classes/progress
 	../classes/calendar
-
-
-.. toctree::
-	:maxdepth: 1
-	:caption: GUI Events
-
-	../classes/widget.onenter
-	../classes/widget.onleave
-	../classes/widget.onkeydown
-	../classes/widget.onkeyup
-	../classes/button.onclick
