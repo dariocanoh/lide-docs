@@ -9,7 +9,7 @@ Form
 ====
 .. note::
   
-  Form is derived from  :ref:`Window class <ClassWindow>`.
+  Form is derived from  Window_ class.
 
   A form is a window or screen that contains numerous controls, or fields to enter data. 
 
@@ -69,13 +69,24 @@ These methods are defined by this class.
 
 ----------------------------------------------------------------------------------------------------
 
-Form:getFocusedObject()
-^^^^^^^^^^^^^^^^^^^^^^^
+Form:getFocusedObject
+^^^^^^^^^^^^^^^^^^^^^
 
   Returns focused object.
 
 =========  =========================================================================================
  object_    Form:getFocusedObject()
+=========  =========================================================================================
+ 
+----------------------------------------------------------------------------------------------------
+
+Form:setFocusedObject
+^^^^^^^^^^^^^^^^^^^^^
+
+  Sets the focused object.
+
+=========  =========================================================================================
+ nil_       Form:setFocusedObject( Object_ )
 =========  =========================================================================================
  
 ----------------------------------------------------------------------------------------------------
@@ -88,15 +99,16 @@ In this example we create a new Form ...
 
 .. code-block:: lua
    :linenos:
-   :emphasize-lines: 2,4,7,8
+   :emphasize-lines: 4,9
     
-    myWnd = Form:new {
-    	ID = 100, Name = "MyForm",
+    myWnd = Form:new { Name = "MyForm",
     	
     	-- PosX = 30, PosY = 70, Width , Height, >> Here we don't send the size, for using default sizes
 
     	Title  = "YOUR NEW Form",
     }
+
+    myWnd:show();
 
 ----------------------------------------------------------------------------------------------------
 

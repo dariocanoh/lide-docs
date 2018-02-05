@@ -69,11 +69,45 @@ These methods are inherited from its super classes:
   Widget:getHeight_      Returns object's height.
   Widget:setHeight_      Sets the object height.
   Widget:getwxObj_       Returns the wxWidgets object.
-  Control:getText_       Returns the button text.
-  Control:setText_       Sets the button text.
 =====================  =============================================================================
 
+
+Button:getText
+^^^^^^^^^^^^^^
+   
+   Returns the button's text, as it was passed to ``setText()``
+
+   Note that the returned string may contains mnemonics ("&" characters) if they were passed to the 
+   ``setText()`` function; use ``getText(false)`` if they are undesired.
+
+   Also note that the returned string is always the string which was passed to ``setText()``.
+
+   Reimplemented from wxWindow.
+
+=========  =========================================================================================
+ string_    Control:getText( bool_ bMnemonics = true )
+=========  =========================================================================================
+
 ----------------------------------------------------------------------------------------------------
+
+
+Button:setText
+^^^^^^^^^^^^^^
+  
+   Sets the control's label.
+
+   All "&" characters in the label are special and indicate that the following character is a 
+   mnemonic for this control and can be used to activate it from the keyboard (typically by using 
+   Alt key in combination with it). To insert a literal ampersand character, you need to double it, 
+   i.e. use "&&". If this behaviour is undesirable, use ``setText(text, false)`` instead.
+
+=======  ===========================================================================================
+ bool_    Control:setText( string_ sNewText, bMnemonics = true )
+=======  ===========================================================================================
+
+----------------------------------------------------------------------------------------------------
+
+
 
 .. // Required values for html docs visualization
 .. include:: ../directives.rst
