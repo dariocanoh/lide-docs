@@ -21,6 +21,9 @@ These are the API classes.
 	
 	classes/panel	
 	classes/control
+	
+	controls/*
+	
 	classes/calendar
 
 	classes/toolbar
