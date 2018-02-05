@@ -23,13 +23,17 @@ These are the API classes.
 	classes/control
 	
 	controls/*
-	
-	classes/calendar
 
 	classes/toolbar
 	
 	classes/button
+	classes/label
+	classes/image
+	classes/listbox
+	classes/combobox
+	classes/progress
+	classes/calendar
 
 	classes/textctrl
 	classes/textbox
-
+	classes/checkbox
