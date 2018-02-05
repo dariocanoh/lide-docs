@@ -42,7 +42,6 @@ lide.widgets
 	../classes/label
 	../classes/image
 	../classes/listbox
-	../classes/combobox
 	../classes/progress
 	../classes/calendar
 
@@ -56,4 +55,3 @@ lide.widgets
 	../classes/widget.onkeydown
 	../classes/widget.onkeyup
 	../classes/button.onclick
-	

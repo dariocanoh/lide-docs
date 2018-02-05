@@ -6,6 +6,7 @@
 .. _Event:    ../classes/event.html
 .. _EventREF: ../classes/event_reference.html
 
+.. _void:     ../types.html # nil-type
 .. _nil:      ../types.html # nil-type
 .. _object:   ../types.html # object-type
 .. _function: ../types.html # function-type
@@ -16,11 +17,10 @@
 .. _bool:     ../types.html # boolean-type
 
 
-.. _Object:   ../classes/object.html
+.. // _Object:   ../classes/object.html
 .. _Font:  	  ../classes/font.html
 .. _Widget:   ../classes/widget.html
 .. _Control:  ../classes/control.html
-.. _Button:   ../classes/button.html
 .. _TextCtrl: ../classes/textctrl.html
 
 
@@ -34,12 +34,19 @@
 
 .. //////////////////////////////
 
+.. _Button:   ../classes/button.html
+.. _Label:    ..classes/label.html
+.. _Image:    ..classes/image.html
+.. _Listbox:  ..classes/listbox.html
+.. _Combobox: ..classes/combobox.html
+.. _Progress: ..classes/progress.html
 .. _Calendar: ..classes/calendar.html
 
 .. // Define events:
 
-.. _Widget.onEnter:  ../classes/widget.onenter.html
-.. _Widget.onLeave:  ../classes/widget.onleave.html
+.. _Widget.onEnter:    ../classes/widget.onenter.html
+.. _Widget.onLeave:    ../classes/widget.onleave.html
+.. _Widget.onKeyDown:  ../classes/widget.onkeydown.html
 
 .. _Button.onClick:	 ../classes/button.onclick.html
 

@@ -6,7 +6,7 @@
 .. _ClassDialog:
 
 Dialog
-====
+======
 .. note::
   
   Dialog is derived from  :ref:`Window class <ClassWindow>`.
@@ -74,7 +74,7 @@ In this example we create a new Dialog ...
 
 .. code-block:: lua
    :linenos:
-   :emphasize-lines: 2,4,7,8
+   :emphasize-lines: 2-4
     
     myWnd = Dialog:new { Name = "MyDialog",
     	Title  = "YOUR NEW Dialog",

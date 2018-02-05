@@ -59,8 +59,8 @@ The following events are emitted by this class:
 =========================  =========================================================================
   Event name                Description
 =========================  =========================================================================
- Menu.onEnter_            When the mouse moves onto this Menu.
- Menu.onLeave_            When the mouse moves out to this Menu.
+ Menu.onEnter_               When the mouse moves onto this Menu.
+ Menu.onLeave_               When the mouse moves out to this Menu.
 =========================  =========================================================================
 
 ----------------------------------------------------------------------------------------------------

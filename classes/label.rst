@@ -45,7 +45,6 @@ The following events are emitted by this class:
 =========================  =========================================================================
  Widget.onEnter_             When the mouse moves onto this widget.
  Widget.onLeave_             When the mouse moves out to this widget.
- Label.onClick_             When the user clicks on this Label.
 =========================  =========================================================================
 
 ------------------------------------------------------------------------------------------------------
