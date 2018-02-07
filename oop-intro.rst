@@ -449,3 +449,9 @@ casting fails an error occurs.
 
 ``C:trycast(x)`` does exactly the same except that this simply returns 
 ``nil`` when the casting is impossible rather than an error occurs.
+
+
+
+
+.. // Required values for html docs visualization
+.. include:: ./directives.rst
