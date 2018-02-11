@@ -17,7 +17,7 @@ lide.file
   .. code-block:: lua
    
    local file = lide.file
-   file.copy('C:\file', 'D:\file');
+   file.copy('C:\\file', 'D:\\file');
 
 ----------------------------------------------------------------------
 
