@@ -27,6 +27,8 @@
         ./modules/lide.platform
         ./modules/lide.core.error
         ./modules/lide.widgets
+        ./modules/lide.file
+        ./modules/lide.folder
 
 .. toctree::
 	:hidden:
