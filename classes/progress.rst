@@ -12,7 +12,14 @@ Progress
 
   Progress is derived from Control_ class.
 
-A Progress object is a control that contains a progress bar to display the percentage of any work.
+ A Progress is a horizontal or vertical bar which shows a quantity (often time).
+
+Progressbar supports two working modes: determinate and indeterminate progress.
+
+The first is the usual working mode (see ``setCurrentPos`` and ``setMaxValue``) while the second can 
+be used when the program is doing some processing but you don't know how much progress is being done. 
+In this case, you can periodically call the Pulse function to make the progressbar switch to 
+indeterminate mode (graphically it's usually a set of blocks which move or bounce in the bar control).
 
 ----------------------------------------------------------------------------------------------------
 
@@ -72,7 +79,8 @@ These methods are inherited from its super classes:
 Progress:setCurrentPos
 ^^^^^^^^^^^^^^^^^^^^^^
    
-   This method helps to set the current position of the progress bar.
+   This method helps to set the current position of the progress bar. This function makes the 
+   progressbar switch to determinate mode, if it's not already.
    
 =========  =========================================================================================
  bool_       Progress:setCurrentPos ( number_ nPercent )
@@ -84,7 +92,7 @@ Progress:setCurrentPos
 Progress:getCurrentPos
 ^^^^^^^^^^^^^^^^^^^^^^
   
-   Gets the current position of progress bar.
+    Gets the current position of progress bar.
 
 =========  =========================================================================================
  number_    Progress:setCurrentPos( number_ nPosition )
@@ -92,8 +100,58 @@ Progress:getCurrentPos
 
 ----------------------------------------------------------------------------------------------------
 
+
 Progress:isVertical
 ^^^^^^^^^^^^^^^^^^^
+  
+    Returns true if the progressbar is vertical and false otherwise.
+
+===========  =======================================================================================
+ boolean_      Progress:isVertical()
+===========  =======================================================================================
+
+----------------------------------------------------------------------------------------------------
+
+
+Progress:setMaxValue
+^^^^^^^^^^^^^^^^^^^^
+  
+  Sets the range (maximum value) of the progressbar. This function makes the progressbar switch to 
+  determinate mode, if it's not already.
+
+===========  =======================================================================================
+ nil_          Progress:setMaxValue( number_ nMaxValue )
+===========  =======================================================================================
+
+----------------------------------------------------------------------------------------------------
+
+
+Progress:pulse
+^^^^^^^^^^^^^^
+  
+  Switch the progressbar to indeterminate mode (if required) and makes the progressbar move a bit 
+  to indicate the user that some progress has been made.
+
+  *Note that after calling this function the value returned by ``getCurrentPos`` is undefined and 
+  thus you need to explicitely call ``setCurrentPos`` if you want to restore the determinate mode.*
+
+===========  =======================================================================================
+ nil_          Progress:pulse( )
+===========  =======================================================================================
+
+----------------------------------------------------------------------------------------------------
+
+
+Progress:getMaxValue
+^^^^^^^^^^^^^^^^^^^^
+  
+  Returns the maximum position of the progressbar.
+
+===========  =======================================================================================
+ nil_          Progress:pulse( )
+===========  =======================================================================================
+
+----------------------------------------------------------------------------------------------------
 
 
 
