@@ -51,9 +51,9 @@ file.exists
 	
   Determine if the given file exists.
 
-======  ==============================================================
- nil_ 	  file.exists ( string_ sFilePath )
-======  ==============================================================
+==========  ==========================================================
+ boolean_ 	file.exists ( string_ sFilePath )
+==========  ==========================================================
 
 
 .. // Required values for html docs visualization
