@@ -1,7 +1,7 @@
 .. /////// Hernan Dario Cano [dcanohdev@gmail.com]
 .. // classes/widgets/Window.onclose.rst
 .. //  Reference to onclose event of Window class.
-.. //   (c) 2018 Hernan Dario Cano | lide license
+.. //   (c) 2018 Hernan Dario Cano | Lide Framework License
 
 .. _Window_onClose:
 
