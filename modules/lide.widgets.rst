@@ -48,3 +48,5 @@ lide.widgets
 	../classes/listbox
 	../classes/calendar
 	../classes/textbox
+	../classes/combobox
+	../classes/progress

@@ -86,7 +86,7 @@ Form:setFocusedObject
   Sets the focused object.
 
 =========  =========================================================================================
- nil_       Form:setFocusedObject( Widget_ )
+ nil_       Form:setFocusedObject( Widget_ oDefault )
 =========  =========================================================================================
  
 ----------------------------------------------------------------------------------------------------
@@ -110,6 +110,8 @@ In this example we create a new Form ...
     myWnd:show();
 
 ----------------------------------------------------------------------------------------------------
+
+
 
 .. // Required values for html docs visualization
 .. include:: ../directives.rst
