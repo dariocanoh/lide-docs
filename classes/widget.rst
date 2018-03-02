@@ -1,7 +1,7 @@
-.. /////// 2015/06/14 - Dario Cano [thdkano@gmail.com]
+.. /////// Hernan Dario Cano [dcanohdev@gmail.com]
 .. // docs/classes/widget.rst
 .. //  Class Widget reference
-.. //   (c) 2015 Dario Cano | lide license
+.. //   (c) 2015 Hernan Dario Cano | lide license
 
 .. _ClassWidget:
 
@@ -26,9 +26,9 @@ Constructor
 Widget class has a single constructor:
 
 
-.. code-block:: c++
+.. code-block:: lua
 
- object Widget:new ( string sWidgetName, string sWidgetType, number nPosX, number nPosY, number nWidth, number nHeight, number nID )
+ object Widget:new ( string sWidgetName, string sWidgetType, number nPosX, number nPosY, number nWidth, number nHeight )
 
 
 Arguments
@@ -36,17 +36,16 @@ Arguments
 
 These arguments are received by class constructor.
 
-============  ======================================================================================
-  Argument     Description
-============  ======================================================================================
- sWidgetName   The widget name
- sWidgetType   The widget type identificator
- nPosX         Position related to X
- nPosY         Position related to Y
- nWidth        Width of the widget
- nHeight       Height of the widget
- nID           Widget's identificator 
-============  ======================================================================================
+=============  =====================================================================================
+  Argument       Description
+=============  =====================================================================================
+ sWidgetName    The widget name
+ sWidgetType    The widget type identificator
+ nPosX          Position related to X
+ nPosY          Position related to Y
+ nWidth         Width of the widget
+ nHeight        Height of the widget
+=============  =====================================================================================
 
 
 
@@ -281,6 +280,30 @@ Widget:setEnabled
 
 ==========  ========================================================================================
  nil_        Widget:setEnabled( bool_ bEnable )
+==========  ========================================================================================
+
+----------------------------------------------------------------------------------------------------
+
+
+Widget:setFocus
+^^^^^^^^^^^^^^^
+
+  Sets the focused object.
+
+==========  ========================================================================================
+ nil_        Widget:setFocus( object_ oDefault )
+==========  ========================================================================================
+
+----------------------------------------------------------------------------------------------------
+
+
+Widget:initializeEvents
+^^^^^^^^^^^^^^^^^^^^^^^
+
+  Initialize events especified on list.
+
+==========  ========================================================================================
+ nil_        Widget:initializeEvents( table_ tList )
 ==========  ========================================================================================
 
 ----------------------------------------------------------------------------------------------------
