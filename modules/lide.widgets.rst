@@ -27,6 +27,8 @@ lide.widgets
 	:caption: GUI Classes
 
 	../classes/font
+	../classes/item
+	../classes/store
 
 	../classes/object
 	../classes/event

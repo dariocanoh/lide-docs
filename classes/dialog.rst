@@ -48,6 +48,20 @@ These arguments are received by class constructor.
 
 ----------------------------------------------------------------------------------------------------
 
+Events
+******
+
+The following events are emitted by this class:
+
+============================  =========================================================================
+  Event name                    Description
+============================  =========================================================================
+ Dialog.onShow_                 When the form is shown.
+ Dialog.onClose_                When the form is closed.
+============================  =========================================================================
+
+----------------------------------------------------------------------------------------------------
+
 Class Methods
 *************
 
@@ -83,3 +97,6 @@ In this example we create a new Dialog ...
 
 .. // Required values for html docs visualization
 .. include:: ../directives.rst
+
+.. _Dialog.onShow:   Window.onShow_
+.. _Dialog.onClose:  Window.onClose_
