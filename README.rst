@@ -6,6 +6,10 @@ and the Lide framework to create cross-platform applications from the
 Lua language.
 
 
+This repository is connected with the webpage: `Lide Framework readthedocs.io <https://lide-framework.readthedocs.io>`_ 
+so the changes are published automatically.
+
+
 To start we recommend the following documents:
 
 - `Lide Installation <https://lide-framework.readthedocs.io/en/0.1/welcome.html#installation>`_
