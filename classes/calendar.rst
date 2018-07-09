@@ -56,10 +56,10 @@ These arguments are received by class constructor.
                =====================================  ==========  =====================================
                  constant                               value       description
                =====================================  ==========  =====================================
-                ``CAL_SUNDAY_FIRST``                    ``0 ``      Show Sunday as the first day in the week
-                ``CAL_MONDAY_FIRST``                    ``1 ``      Show Monday as the first day in the week
-                ``CAL_SHOW_HOLIDAYS``                   ``2 ``      Highlight holidays in the calendar
-                ``CAL_NO_YEAR_CHANGE``                  ``4 ``      Disable the year changing
+                ``CAL_SUNDAY_FIRST``                    ``0``       Show Sunday as the first day in the week
+                ``CAL_MONDAY_FIRST``                    ``1``       Show Monday as the first day in the week
+                ``CAL_SHOW_HOLIDAYS``                   ``2``       Highlight holidays in the calendar
+                ``CAL_NO_YEAR_CHANGE``                  ``4``       Disable the year changing
                 ``CAL_NO_MONTH_CHANGE``                 ``12``      Disable the month (and, implicitly, the year) changing
                 ``CAL_SHOW_SURROUNDING_WEEKS``          ``32``      Show the neighbouring weeks in the previous and next months
                 ``CAL_SEQUENTIAL_MONTH_SELECTION``      ``16``      Use alternative, more compact, style for the month and year selection controls.
