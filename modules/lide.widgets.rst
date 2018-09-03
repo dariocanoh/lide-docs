@@ -1,11 +1,13 @@
 lide.widgets
 ============
 
+  ``[lide.widgets] ^1.1`` depends on `wx 2.8.12 <https://github.com/lidesdk/wxlua>`_
+
   These classes are loaded with ``lide.widgets`` into this module we 
   will find the necessary functions to build GUI Applications
   implemented in Lua.
 
-  We can access this calling directly ``lide.widgets.?classname`` where 
+  We can access this calling directly ``lide.widgets.?classname`` where
   *?classname* is the class you searching.
 
   .. code-block:: lua
@@ -52,3 +54,4 @@ lide.widgets
 	../classes/textbox
 	../classes/combobox
 	../classes/progress
+	../classes/grid
