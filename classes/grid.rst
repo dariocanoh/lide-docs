@@ -469,7 +469,7 @@ Grid:setColSize
 
 
 Grid:getCellSize
-^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^
    
   Get the size of the cell in number of cells covered by it.
 

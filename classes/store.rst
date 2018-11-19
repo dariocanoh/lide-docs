@@ -24,8 +24,7 @@ Store class has one constructor:
 .. code-block:: lua
 
  object Store:new { 
- 	Key1 = Value1,
- 	Key2 = Value2,
+ 	string Keyname, string Keyname2,
  }
 
 
