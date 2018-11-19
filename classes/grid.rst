@@ -7,6 +7,12 @@
 
 Grid
 ========
+
+::
+
+   lide.widgets.controls.grid 1.0
+
+
 .. note::
 
   Grid is derived from Control_ class.
