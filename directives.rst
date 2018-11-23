@@ -30,7 +30,7 @@
 
 .. _Checkbox:          ../classes/checkbox.html
 .. _Checkbox.onClick:  ../classes/checkbox.onclick.html
-.. _Checkbox:getBind:  ../classes/widget.html # widget-getbind
+.. _Checkbox:getBind:  ../classes/checkbox.html # widget-getbind
 
 .. // Common GUI 
 
