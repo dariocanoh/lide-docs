@@ -30,7 +30,6 @@
 
 .. _Checkbox:          ../classes/checkbox.html
 .. _Checkbox.onClick:  ../classes/checkbox.onclick.html
-.. _Checkbox:getBind:  ../classes/checkbox.html # widget-getbind
 
 .. // Common GUI 
 
@@ -73,7 +72,7 @@
 .. _Widget:setWidth:     ../classes/widget.html # widget-setwidth
 .. _Widget:getHeight:    ../classes/widget.html # widget-getheight
 .. _Widget:setHeight:    ../classes/widget.html # widget-setheight  
-.. _Widget:getwxObj:     ../classes/widget.html # widget-getwxobj
+.. _Widget:getBind:      ../classes/widget.html # widget-getbind
 .. _Widget:getEnabled:   ../classes/widget.html # widget-getenabled
 .. _Widget:setEnabled:   ../classes/widget.html # widget-setenabled   
 .. _Widget:getVisible:   ../classes/widget.html # widget-getvisible   
