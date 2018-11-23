@@ -6,7 +6,7 @@ and the Lide framework to create cross-platform applications from the
 Lua language.
 
 
-This repository is connected with the webpage: `Lide Framework readthedocs.io <https://lide-framework.readthedocs.io>`_ 
+This repository is connected with the webpage: `Lide Framework readthedocs.io <https://lide-framework.readthedocs.io/en/latest/>`_ 
 so the changes are published automatically.
 
 
