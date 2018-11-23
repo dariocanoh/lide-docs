@@ -56,3 +56,4 @@ lide.widgets
 	../classes/progress
 	../classes/grid
 	../classes/tree
+	../classes/checkbox

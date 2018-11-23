@@ -12,6 +12,6 @@ so the changes are published automatically.
 
 To start we recommend the following documents:
 
-- `Lide Installation <https://lide-framework.readthedocs.io/en/0.1/welcome.html#installation>`_
-- `Objects and Classes on Lua <https://lide-framework.readthedocs.io/en/0.1/oop-intro.html>`_
-- `Lide Classes Reference <https://lide-framework.readthedocs.io/en/0.1/modules/lide.class.html>`_
+- `Lide Installation <https://lide-framework.readthedocs.io/en/latest/welcome.html#installation>`_
+- `Objects and Classes on Lua <https://lide-framework.readthedocs.io/en/latest/oop-intro.html>`_
+- `Lide Classes Reference <https://lide-framework.readthedocs.io/en/latest/modules/lide.class.html>`_
