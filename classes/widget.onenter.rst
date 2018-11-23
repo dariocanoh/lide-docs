@@ -1,4 +1,4 @@
-.. /////// 2016/02/07 - Dario Cano [thdkano@gmail.com]
+.. /////// 2016/02/07 - Hernan Dario Cano [dcanohdev@gmail.com]
 .. // classes/widget.onenter.rst
 .. //  Widget's event onEnter reference
 .. //   (c) 2015 Dario Cano | lide license
@@ -8,19 +8,20 @@
 Widget.onEnter
 ^^^^^^^^^^^^^^ 
 
-   This event will be performed when the mouse moves onto this widget ("enters" the widget's territory).
+   This event will be performed when the mouse moves onto this widget 
+   ("enters" the widget's territory).
 
 
-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 Prototype
 +++++++++
       
-===========  =======================================================================================
+===========  =========================================================
  function_    onEnterHandler ( object_ event )
-===========  =======================================================================================
+===========  =========================================================
 
-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 Example
 +++++++
@@ -37,7 +38,7 @@ This example prints the name of the widget when the mouse is on it.
 
     myForm.onEnter:setHandler(onEnterHandler)
 
-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 .. // Required values for html docs visualization
 .. include:: ../directives.rst

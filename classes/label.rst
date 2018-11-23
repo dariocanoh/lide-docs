@@ -7,17 +7,19 @@
 
 Label
 ======
-.. note::
 
-  Label is derived from Control_ class.
+   Label is derived from Control_ class.
+ 
+   ``[lide.widgets] ^1.0`` ``lide.classes.controls.label 1.0``
 
 A static text control displays one or more lines of read-only text.
 
-Label supports the three classic text alignments, label ellipsization i.e. replacing parts of the 
-text with the ellipsis ("...") if the label doesn't fit into the provided space and also formatting 
-markup with Label:SetLabelMarkup()
+Label supports the three classic text alignments, label ellipsization 
+i.e. replacing parts of the text with the ellipsis ("...") if the 
+label doesn't fit into the provided space and also formatting markup 
+with Label:SetLabelMarkup()
 
-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 Constructor
@@ -33,30 +35,30 @@ Label class has a complex constructor:
  		object Parent, Text = 'My Label'
  	}
 
-------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 Events
 ******
 
 The following events are emitted by this class:
 
-=========================  =========================================================================
+=========================  ===========================================
   Event name                Description
-=========================  =========================================================================
+=========================  ===========================================
  Widget.onEnter_             When the mouse moves onto this widget.
  Widget.onLeave_             When the mouse moves out to this widget.
-=========================  =========================================================================
+=========================  ===========================================
 
-------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 Inherited Methods
 *****************
 
 These methods are inherited from its super classes:
 
-=====================  =============================================================================
+=====================  ===============================================
   Class Method             Description
-=====================  =============================================================================
+=====================  ===============================================
   Object:getID_          Returns object's identifier.
   Object:setID_          Sets the object identifier.
   Object:getName_        Returns object's name.
@@ -72,7 +74,7 @@ These methods are inherited from its super classes:
   Widget:getHeight_      Returns object's height.
   Widget:setHeight_      Sets the object height.
   Widget:getwxObj_       Returns the wxWidgets object.
-=====================  =============================================================================
+=====================  ===============================================
 
 
 Label:getText
@@ -80,18 +82,20 @@ Label:getText
    
    Returns the Label's text, as it was passed to ``setText()``
 
-   Note that the returned string may contains mnemonics ("&" characters) if they were passed to the 
-   ``setText()`` function; use ``getText(false)`` if they are undesired.
+   Note that the returned string may contains mnemonics ("&" 
+   characters) if they were passed to the ``setText()`` function; 
+   use ``getText(false)`` if they are undesired.
 
-   Also note that the returned string is always the string which was passed to ``setText()``.
+   Also note that the returned string is always the string which was 
+   passed to ``setText()``.
 
    Reimplemented from wxWindow.
 
-=========  =========================================================================================
+=========  ===========================================================
  string_    Label:getText( bool_ bMnemonics = true )
-=========  =========================================================================================
+=========  ===========================================================
 
-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 Label:setText
@@ -99,16 +103,18 @@ Label:setText
   
    Sets the control's label.
 
-   All "&" characters in the label are special and indicate that the following character is a 
-   mnemonic for this control and can be used to activate it from the keyboard (typically by using 
-   Alt key in combination with it). To insert a literal ampersand character, you need to double it, 
-   i.e. use "&&". If this behaviour is undesirable, use ``setText(text, false)`` instead.
+   All "&" characters in the label are special and indicate that the 
+   following character is a mnemonic for this control and can be used 
+   to activate it from the keyboard (typically by using Alt key in 
+   combination with it). To insert a literal ampersand character, you 
+   need to double it, i.e. use "&&". If this behaviour is undesirable, 
+   use ``setText(text, false)`` instead.
 
-=======  ===========================================================================================
+=======  =============================================================
  bool_    Label:setText( string_ sNewText, bMnemonics = true )
-=======  ===========================================================================================
+=======  =============================================================
 
-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 

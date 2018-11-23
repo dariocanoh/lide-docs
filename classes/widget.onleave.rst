@@ -1,7 +1,7 @@
-.. /////// 2016/02/07 - Dario Cano [thdkano@gmail.com]
+.. /////// 2016/02/07 - Hernan Dario Cano [dcanohdev@gmail.com]
 .. // classes/widget.onleave.rst
 .. //  Widget's event onLeave reference
-.. //   (c) 2016 Dario Cano | lide license
+.. //   (c) 2016 Dario Cano | LIDE LICENSE
 
 .. _Widget.onLeave:
 
@@ -11,16 +11,16 @@ Widget.onLeave
    This event will be performed when the mouse moves out to this widget ("leaves" the widget's territory).
 
 
-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 Prototype
 +++++++++
 
-===========  =======================================================================================
+===========  ======================================================================
  function_    onLeaveHandler ( object_ event )
-===========  =======================================================================================      
+===========  =========================================================
 
-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 Example
 +++++++
@@ -37,7 +37,7 @@ This example prints the name of the widget when the mouse is out of it.
 
     myForm.onLeaveHandler:setHandler(onLeaveHandler)
 
-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 .. // Required values for html docs visualization
 .. include:: ../directives.rst

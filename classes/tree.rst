@@ -8,12 +8,10 @@
 Tree
 ====
 
+   Tree is derived from Control_ class.
+
    ``[lide.widgets] ^1.1`` ``lide.widgets.controls.tree 1.0``
 
-
-.. note::
-
-  Tree is derived from Control_ class.
 
 A tree control presents information as a hierarchy, with items that 
 may be expanded to show further items.

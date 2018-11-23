@@ -1,26 +1,27 @@
 .. /////// 2016/02/07 - Hernan Dario Cano [dcanohdev@gmail.com]
 .. // classes/widget.onkeydown.rst
 .. //  Widget's event onKeyDown reference
-.. //   (c) 2016 Hernan Dario Cano | GNU GENERAL PUBLIC LICENSE
+.. //   (c) 2016 Hernan Dario Cano | LIDE LICENSE
 
 Widget.onKeyDown
 ^^^^^^^^^^^^^^^^
 
    When any key has been pressed. 
 
-   If this event is handled and not skipped, Widget.onKeyChar_ will not be 
-   generated at all for this key press (but Widget.onKeyUp_ will be).
+   If this event is handled and not skipped, Widget.onKeyChar_ will 
+   not be generated at all for this key press (but Widget.onKeyUp_ 
+   will be).
 
-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 Prototype
 +++++++++
 
-===========  =======================================================================================
+===========  =========================================================
  function_    onKeyHandler ( object_ event, number_ nKeyCode )
-===========  =======================================================================================      
+===========  =========================================================
 
-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 Example
 +++++++
@@ -37,7 +38,7 @@ This example prints the name of the widget when the mouse is out of it.
 
     myForm.onKeyDown:setHandler(onKeyHandler)
 
-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 .. // Required values for html docs visualization
 .. include:: ../directives.rst

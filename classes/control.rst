@@ -1,4 +1,4 @@
-.. /////// 14/06/2015 - Dario Cano [thdkano@gmail.com]
+.. /////// 14/06/2015 - Dario Cano [dcanohdev@gmail.com]
 .. // classes/control.rst
 .. //  Class Control reference
 .. //   (c) 2015 Dario Cano | lide license
@@ -7,14 +7,17 @@
 
 Control
 =======
-.. note::
 
   Control is derived from Widget_ class.
+  
+  ``[lide.widgets] ^1.0`` ``lide.classes.controls 1.0``
 
-This class is an abstract base class for objects called controls. The purpose is to define properties 
-and methods shared for derivated classes. 
 
-----------------------------------------------------------------------------------------------------
+This class is an abstract base class for objects called controls. The 
+purpose is to define properties and methods shared for derivated 
+classes. 
+
+----------------------------------------------------------------------
 
 
 Constructor
@@ -33,9 +36,9 @@ Arguments
 
 These arguments are received by class constructor.
 
-==============  ====================================================================================
+==============  ======================================================
   Argument       Description
-==============  ====================================================================================
+==============  ======================================================
  sControlName    The control name
  oParent         The control parent
  nPosX           Position related to X
@@ -43,10 +46,10 @@ These arguments are received by class constructor.
  nWidth          Width of the control
  nHeight         Height of the control
  nID             The object identificator 
-==============  ====================================================================================
+==============  ======================================================
 
 
-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 Inherited Methods
@@ -54,9 +57,9 @@ Inherited Methods
 
 These methods are inherited from its super classes:
 
-=====================  =============================================================================
+=====================  ===============================================
   Class Method          Description
-=====================  =============================================================================
+=====================  ===============================================
  Object:getID_		       Returns control's identifier.
  Object:setID_		       Sets the control identifier.
  Object:getName_	       Returns control's name.
@@ -71,14 +74,14 @@ These methods are inherited from its super classes:
  Widget:setWidth_	       Sets the control width.
  Widget:getHeight_	     Returns control's height.
  Widget:setHeight_	     Sets the control height.
- Widget:getwxObj_	       Returns a reference to the C++ control.
+ Widget:getBind_	       Returns a reference to the C++ control.
  Widget:getEnabled_      Returns true if is enabled.
  Widget:setEnabled_      Set control enabled or disabled.
  Widget:getVisible_      Returns the control visibility.
  Widget:setVisible_      Returns the control visibility.
-=====================  =============================================================================
+=====================  ===============================================
 
-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 Class Methods
@@ -92,11 +95,11 @@ Control:getText
    
    Returns the control text.
 
-=========  =========================================================================================
+=========  ===========================================================
  string_    Control:getText( bool_ bMnemonics )
-=========  =========================================================================================
+=========  ===========================================================
 
-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 Control:setText
@@ -104,11 +107,11 @@ Control:setText
 	
    Set control's text.
 
-======  ============================================================================================
+======  ==============================================================
  nil_ 	 Control:setText( string_ sNewText )
-======  ============================================================================================
+======  ==============================================================
 
-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 Control:getFont
@@ -116,11 +119,11 @@ Control:getFont
 	
    Returns the control's font.
 
-=======  ===========================================================================================
+=======  =============================================================
  Font_    Control:getFont( )
-=======  ===========================================================================================
+=======  =============================================================
 
-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 Control:setFont
@@ -132,7 +135,7 @@ Control:setFont
  nil_ 	 Control:setFont( string_ sFontFamily, number_ nFontSize, string_ sFontFlags )
 ======  ============================================================================================
 
-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 Control:setTextMarkup
@@ -211,11 +214,11 @@ Currently Button_ supports markup in all major ports (Windows, Linux/GTK and wxO
 Label supports it in Linux/GTK and wxOSX and its generic version (which can be used under Windows if 
 markup support is required). Extending support to more controls is planned in the future.
 
-======  ============================================================================================
+======  ==============================================================
  nil_    Control:setTextMarkup( string_ sTextMarkup )
-======  ============================================================================================
+======  ==============================================================
 
-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 .. // Required values for html docs visualization
