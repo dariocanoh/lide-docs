@@ -34,24 +34,18 @@
 	:hidden:
 	:caption: LIDE LIBRARIES
 
-	./modules/lide.http
-	./modules/lide.sql
-	./modules/lide.thread
+..//	./modules/lide.http
+..//	./modules/lide.sql
+..//	./modules/lide.thread
 
 .. toctree::
 	:hidden:
 	:caption: LUA PACKAGES
 	
-	./modules/package_manager
-	./modules/package_reference
-	./modules/list_of_packages
+..//	./modules/package_manager
+..//	./modules/package_reference
+..//	./modules/list_of_packages
 
-.. toctree::
-	:hidden:
-	:caption: Hello World
 
-	./make_window
-
-	
 .. // Required values for html docs visualization
 .. include:: ./directives.rst
