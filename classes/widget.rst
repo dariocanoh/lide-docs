@@ -7,9 +7,11 @@
 
 Widget
 ======
-.. note::
 
   Widget is derived from Object_ class
+  
+  ``[lide.widgets] ^1.1`` ``lide.widgets.controls.checkbox 1.0``
+
 
 Widget is the base class for all windows and represents any visible object on screen. All controls, 
 top level windows and so on are widgets.
@@ -36,16 +38,16 @@ Arguments
 
 These arguments are received by class constructor.
 
-=============  =======================================================
-  Argument       Description
-=============  =======================================================
- sWidgetName    The widget name
- sWidgetType    The widget type identificator
- nPosX          Position related to X
- nPosY          Position related to Y
- nWidth         Width of the widget
- nHeight        Height of the widget
-=============  =======================================================
+=============  ==========  =======================================================
+  Argument       Type        Description
+=============  ==========  =======================================================
+ sWidgetName    string_     The widget name
+ sWidgetType    string_     The widget type identificator
+ nPosX          number_     Position related to X
+ nPosY          number_     Position related to Y
+ nWidth         number_     Width of the widget
+ nHeight        number_     Height of the widget
+=============  ==========  =======================================================
 
 
 
@@ -123,7 +125,7 @@ Widget:getWidgetType
    Returns the widget type identificator.
 
 =========  =========================================================================================
- number_ 	  Widget:getWidgetType()
+ number_ 	Widget:getWidgetType()
 =========  =========================================================================================
 
 ----------------------------------------------------------------------------------------------------
