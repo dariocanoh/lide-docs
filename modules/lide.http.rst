@@ -6,69 +6,121 @@
 lide.http
 =========
 
-  This function allow us to make a class using another Lua class as 
-  base or make clear class.
-
-  .. code-block:: lua
-   
-   --- load only lide core and assign class variable
-   local class = require 'lide.core.init' . class 
-
-   newClass = class 'newClass' : subclassof ( baseClass )
-     
-   function newClass:newClass ( fields )
-   	... -- do constructor
-   end
-
-OOP Lua model resources:
-
-- `See Class reference <../oop-intro.html>`_.
-- `See Encapsulation and modifiers <../access_modifiers.html>`_.
+The library lide.http allows us to do http / https (post, get, put, 
+head, delete, etc ...) from lua.
 
 
-Framework Classes
-*****************
+installation
+^^^^^^^^^^^^
 
-.. toctree::
-  :maxdepth: 1
-  
-  ../classes/object
-  ../classes/exception
-  ../classes/date
+To install this library use ``lide install``.
+
+``$ lide install lide.http``
+
+
+
+dependencies
+^^^^^^^^^^^^
+
+The following dependencies are necessary to be able to run the library:
+
+- socket 2.0.2
+- ssl_  0.4
+- ltn12_ 1.0.3
+- cjson_ 2.1.0
+- xml_ 1.1.2
+- md5_ 1.1.2
+- base64_ 5.1.0
+- luacurl_ 1.1.0
+
+
+
+lua API
+^^^^^^^
+
+Basic usage functions.
+
+http.download ( string Url, string DestPath, func downldCallback ( number Downlded, number DownldTotal, number Percent ) )
+  Download the given "url" to "dest" path to the system.
+
+http.test_connection ( string Url )
+  Test HTTP or HTTPS connection.
+
 
 ----------------------------------------------------------------------
 
-Lua Class Methods
-*****************
+http requests
+-------------
 
-These methods allow you to interact directly with classes and make 
-useful changes to constructors and methods of classes and instances.
-
-----------------------------------------------------------------------
-
-
-Class:enum
-^^^^^^^^^^
-
-``enum`` method allows you to add classes constant values, **returns a 
-read-only table** that contains the values provided for the enum.
-
-======== =============================================================
- table_   Class : enum ( table_ tblEnum )
-======== =============================================================
+The second argument of a request is a table that can be used to make 
+more advanced requests. Any request can be made with either a second 
+argument or as a table.
 
 .. code-block:: lua
 
-	ClassConstants = Class:enum {
-		CONST_1 = 100,
-		CONST_2 = 200,
-	}
+  table requestData = {
+    table data,
+    table headers,
+    table proxy,
+    number timeout,
+    table auth,   --> result of requests.HTTPDigestAuth
+    string cookies,
+    bool allow_redirects = true,
+  }
 
-	print( Class.CONST_1 )          -->> 100
-	print( ClassConstants.CONST_1 ) -->> 100
 
-----------------------------------------------------------------------
+http.get ( string Url, table requestData )
+  The GET method requests a representation of a specific resource.
+  Requests that use the GET method should only retrieve data.
+
+http.head ( string Url, table requestData )
+  The HEAD method requests an identical response to that of a GET 
+  request, but without the body of the response.
+
+http.post ( string Url, table requestData )
+  The POST method is used to send an entity to a specific resource, 
+  often causing a change in state or side effects on the server.
+
+http.put ( string Url, table requestData )
+  The PUT mode replaces all current representations of the 
+  destination resource with the payload of the request.
+
+http.delete ( string Url, table requestData )
+  The DELETE method deletes a specific resource.
+
+http.connect ( string Url, table requestData )
+  The CONNECT method establishes a tunnel to the server identified 
+  by the resource.
+
+http.options ( string Url, table requestData )
+  The OPTIONS method is used to describe the communication options 
+  for the destination resource.
+
+http.trace ( string Url, table requestData )
+  The TRACE method performs a message loopback test along the route 
+  to the destination resource.
+
+http.patch ( string Url, table requestData )
+  The PATCH method is used to apply partial modifications to a resource.
 
 
 
-.. include:: ../directives.rst
+Changelog
+---------
+
+lide.http 0.2.1 (Oct 14 2018)
+
+Changes implemented on version 0.2.1:
+- ✓ Update to arm64
+- ✓ Use isString, isTable, isFunction.
+- ✓ Return default lua types values (bool, string, table, number)
+
+.. _dcanoh:  http://github.com/lidesdk/repos/dcanoh.rst>`.
+.. _ssl:     https://github.com/lidesdk/repos/blob/master/stable/ssl/readme.rst
+.. _ltn12:   https://github.com/lidesdk/repos/blob/master/stable/ltn12/readme.rst
+.. _cjson:   https://github.com/lidesdk/repos/blob/master/stable/cjson/readme.rst
+.. _xml:     https://github.com/lidesdk/repos/blob/master/stable/xml/readme.rst
+.. _md5:     https://github.com/lidesdk/repos/blob/master/stable/md5/readme.rst
+.. _base64:  https://github.com/lidesdk/base64/readme.rst
+.. _luacurl: https://github.com/lidesdk/repos/blob/master/stable/luacurl/readme.rst
+
