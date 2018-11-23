@@ -55,3 +55,4 @@ lide.widgets
 	../classes/combobox
 	../classes/progress
 	../classes/grid
+	../classes/tree
