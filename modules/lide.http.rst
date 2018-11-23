@@ -103,18 +103,6 @@ http.trace ( string Url, table requestData )
 http.patch ( string Url, table requestData )
   The PATCH method is used to apply partial modifications to a resource.
 
-
-
-Changelog
----------
-
-lide.http 0.2.1 (Oct 14 2018)
-
-Changes implemented on version 0.2.1:
-- ✓ Update to arm64
-- ✓ Use isString, isTable, isFunction.
-- ✓ Return default lua types values (bool, string, table, number)
-
 .. _dcanoh:  http://github.com/lidesdk/repos/dcanoh.rst>`.
 .. _ssl:     https://github.com/lidesdk/repos/blob/master/stable/ssl/readme.rst
 .. _ltn12:   https://github.com/lidesdk/repos/blob/master/stable/ltn12/readme.rst
@@ -123,4 +111,3 @@ Changes implemented on version 0.2.1:
 .. _md5:     https://github.com/lidesdk/repos/blob/master/stable/md5/readme.rst
 .. _base64:  https://github.com/lidesdk/base64/readme.rst
 .. _luacurl: https://github.com/lidesdk/repos/blob/master/stable/luacurl/readme.rst
-
