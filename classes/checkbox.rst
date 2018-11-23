@@ -105,7 +105,7 @@ Checkbox:getValue
    
    Gets the state of a 2-state checkbox.
 
-   ** Returns: **
+   *Returns:*
          Returns true if it is checked, false otherwise.
 
 =========  ===========================================================
