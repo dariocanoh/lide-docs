@@ -135,7 +135,7 @@ Checkbox:is3rdStateAllowedForUser
    Returns whether or not the user can set the checkbox to the third 
    state.
 
-   ** Returns: **
+   *Returns:*
          true if the user can set the third state of this checkbox, 
          false if it can only be set programmatically or if it's a 
          2-state checkbox.
@@ -152,7 +152,7 @@ Checkbox:is3State
   
    Returns whether or not the checkbox is a 3-state checkbox.
 
-   ** Returns: **
+   *Returns:*
          true if this checkbox is a 3-state checkbox, false if it's a 
          2-state checkbox.
 
@@ -184,7 +184,7 @@ Checkbox:setValue
 
    This does not cause a Checkbox.onClick_ event to get emitted.
 
-   ** Parameters: **
+   *Parameters:*
          state If true, the check is on, otherwise it is off.
 
 
