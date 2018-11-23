@@ -73,7 +73,7 @@ These methods are inherited from its super classes:
   Widget:setWidth_       			 Sets the object width.
   Widget:getHeight_      			 Returns object's height.
   Widget:setHeight_      			 Sets the object height.
-  Widget:getwxObj_       			 Returns the wxWidgets object.
+  Widget:getBind_       			 Returns the wxWidgets object.
   Control:getText_       			 Returns the button text.
   Control:setText_       			 Sets the button text.
   TextCtrl:saveFile_				 Saves the contents of the control in a text file.

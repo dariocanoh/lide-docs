@@ -1,6 +1,6 @@
 .. /////// 2017/11/12 - Hernan Dario Cano [dcanohdev@gmail.com]
-.. // docs/modules/lide.class.rst
-.. //  lide.class reference
+.. // docs/modules/lide.http.rst 1.0
+.. //  lide.http reference 1.0
 .. //   (c) 2017 Hernan Dario Cano | Lide License
 
 lide.http

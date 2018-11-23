@@ -54,7 +54,7 @@ These methods are inherited from its super classes:
  Widget:setWidth        :ref:`Widget class <ClassWidget>`    Sets the object width.
  Widget:getHeight       :ref:`Widget class <ClassWidget>`    Returns object's height.
  Widget:setHeight       :ref:`Widget class <ClassWidget>`    Sets the object height.
- Widget:getwxObj        :ref:`Widget class <ClassWidget>`    Returns a reference to the C++ object.
+ Widget:getBind         :ref:`Widget class <ClassWidget>`    Returns a reference to the C++ object.
  Widget:getEnabled      :ref:`Widget class <ClassWidget>`    Returns true if is enabled.
  Widget:setEnabled      :ref:`Widget class <ClassWidget>`    Set widget enabled or disabled.
  Widget:getVisible      :ref:`Widget class <ClassWidget>`    Returns the widget visibility.

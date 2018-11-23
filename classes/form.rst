@@ -87,7 +87,7 @@ These methods are defined by this class.
  Widget:setWidth_        Sets the control width.
  Widget:getHeight_       Returns control's height.
  Widget:setHeight_       Sets the control height.
- Widget:getwxObj_        Returns a reference to the C++ control.
+ Widget:getBind_         Returns a reference to the C++ control.
  Widget:getEnabled_      Returns true if is enabled.
  Widget:setEnabled_      Set control enabled or disabled.
  Widget:getVisible_      Returns the control visibility.
