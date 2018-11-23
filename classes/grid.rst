@@ -40,7 +40,7 @@ Control class has a single constructor:
  Grid:new { 
     object Parent, string Name, 
     number PosX, number PosY, 
-    number SelectMode = GRID_SELMODE_ROWS,
+    number SelectMode = Grid.GRID_SELMODE_ROWS,
  }
 
 
@@ -56,7 +56,7 @@ These arguments are received by class constructor.
  Parent        The control parent
  PosX          Position related to X
  PosY          Position related to Y
- SelectMode    ``GRID_SELMODE_ROWS`` ``GRID_SELMODE_CELLS`` ``GRID_SELMODE_COLUMNS``
+ SelectMode    ``Grid.GRID_SELMODE_ROWS`` ``Grid.GRID_SELMODE_CELLS`` ``Grid.GRID_SELMODE_COLUMNS``
 ============  ===========================================================================================
 
 ------------------------------------------------------------------------------------------------------
@@ -131,7 +131,7 @@ Grid:setTable
   will be deleted by the wxGrid destructor.
 
 =========  =========================================================================================
- bool_      Grid:setTable( table_ grid_table, bool_ auto_size, bool_ takeOwnership, number_ selmode = ``GRID_SELMODE_CELLS`` )
+ bool_      Grid:setTable( table_ grid_table, bool_ auto_size, bool_ takeOwnership, number_ selmode = ``Grid.GRID_SELMODE_CELLS`` )
 =========  =========================================================================================
 
 ----------------------------------------------------------------------------------------------------
@@ -166,8 +166,8 @@ Grid:setDefaultCellAlignment
    
   Sets the default horizontal and vertical alignment for grid cell text.
 
-  Horizontal alignment should be one of ``ALIGN_LEFT``, ``ALIGN_CENTRE`` or ``ALIGN_RIGHT``.
-  Vertical alignment should be one of ``ALIGN_TOP``, ``ALIGN_CENTRE`` or ``ALIGN_BOTTOM``.
+  Horizontal alignment should be one of ``Grid.ALIGN_LEFT``, ``Grid.ALIGN_CENTRE`` or ``Grid.ALIGN_RIGHT``.
+  Vertical alignment should be one of ``Grid.ALIGN_TOP``, ``Grid.ALIGN_CENTRE`` or ``Grid.ALIGN_BOTTOM``.
 
 =========  =========================================================================================
  nil_       Grid:setDefaultCellAlignment( number_ nHoriz, number_ nVert )
@@ -181,8 +181,8 @@ Grid:setCellAlignment
    
   Sets the horizontal and vertical alignment for grid cell text at the specified location.
 
-  Horizontal alignment should be one of ``ALIGN_LEFT``, ``ALIGN_CENTRE`` or ``ALIGN_RIGHT``.
-  Vertical alignment should be one of ``ALIGN_TOP``, ``ALIGN_CENTRE`` or ``ALIGN_BOTTOM``.
+  Horizontal alignment should be one of ``Grid.ALIGN_LEFT``, ``Grid.ALIGN_CENTRE`` or ``Grid.ALIGN_RIGHT``.
+  Vertical alignment should be one of ``Grid.ALIGN_TOP``, ``Grid.ALIGN_CENTRE`` or ``Grid.ALIGN_BOTTOM``.
 
 =========  =========================================================================================
  nil_       Grid:setCellAlignment( number_ nRow, number_ nCol, number_ nHoriz, number_ nVert )
@@ -220,7 +220,7 @@ Grid:setRowLabelSize
    
   Sets the width of the row labels.
 
-  If width equals ``GRID_AUTOSIZE`` then width is calculated automatically so that no label is 
+  If width equals ``Grid.GRID_AUTOSIZE`` then width is calculated automatically so that no label is 
   truncated. **Note that this could be slow for a large table. This flag is new since wxWidgets version 2.8.8.**
 
 =========  =========================================================================================
@@ -235,7 +235,7 @@ Grid:setColLabelSize
    
   Sets the height of the column labels.
 
-  If width equals ``GRID_AUTOSIZE`` then width is calculated automatically so that no label is 
+  If width equals ``Grid.GRID_AUTOSIZE`` then width is calculated automatically so that no label is 
   truncated. **Note that this could be slow for a large table. This flag is new since wxWidgets version 2.8.8.**
 
 =========  =========================================================================================
