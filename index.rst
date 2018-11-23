@@ -36,5 +36,13 @@
 
 	./make_window
 
+.. toctree::
+	:hidden:
+	:caption: LIDE PACKAGES
+	
+	./modules/package_manager
+	./modules/package_reference
+	./modules/list_of_packages
+
 .. // Required values for html docs visualization
 .. include:: ./directives.rst
