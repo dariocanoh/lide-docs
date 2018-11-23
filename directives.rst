@@ -14,7 +14,9 @@
 .. _bool:     ../types.html # boolean-type
 
 
-.. // _Object:   ../classes/object.html
+..  _Object:   ../classes/object.html
+..  _Date:     ../classes/date.html
+
 .. _Event:     ../classes/event.html
 
 .. _Exception: ../classes/exception.html

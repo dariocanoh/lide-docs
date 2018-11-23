@@ -163,6 +163,18 @@ Calendar:enableHolidayDisplay
 ----------------------------------------------------------------------
 
 
+Calendar:getSelectedDate
+^^^^^^^^^^^^^^^^^^^^^^^^
+   
+  Gets the currently selected date.
+
+=========  ===========================================================
+ Date_      Calendar:getSelectedDate( )
+=========  ===========================================================
+
+----------------------------------------------------------------------
+
+
 
 .. // Required values for html docs visualization
 .. include:: ../directives.rst
