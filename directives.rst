@@ -62,6 +62,7 @@
 
 .. // class widget:
 
+.. _Widget:getBind:      ../classes/widget.html # widget-getbind
 .. _Widget:getParent:    ../classes/widget.html # widget-getparent  
 .. _Widget:setParent:    ../classes/widget.html # widget-setparent
 .. _Widget:getPosX:      ../classes/widget.html # widget-getposx
@@ -72,7 +73,6 @@
 .. _Widget:setWidth:     ../classes/widget.html # widget-setwidth
 .. _Widget:getHeight:    ../classes/widget.html # widget-getheight
 .. _Widget:setHeight:    ../classes/widget.html # widget-setheight  
-.. _Widget:getBind:      ../classes/widget.html # widget-getbind
 .. _Widget:getEnabled:   ../classes/widget.html # widget-getenabled
 .. _Widget:setEnabled:   ../classes/widget.html # widget-setenabled   
 .. _Widget:getVisible:   ../classes/widget.html # widget-getvisible   
