@@ -27,8 +27,9 @@
 
 .. _Control:   ../classes/control.html
 .. _TextCtrl:  ../classes/textctrl.html
-.. _Checkbox:  ../classes/checkbox.html
 
+.. _Checkbox:          ../classes/checkbox.html
+.. _Checkbox.onClick:  ../classes/checkbox.onclick.html
 
 .. // Common GUI 
 

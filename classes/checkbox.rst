@@ -46,14 +46,14 @@ These arguments are received by class constructor.
  PosY          Position related to Y
  Flags         Possible style modificators for Checkbox control:
               
-              =====================================  ============  =========================================================================================================================================================================================================================
-                 constant                                value      description
-              =====================================  ============  =========================================================================================================================================================================================================================
-                 CHK_2STATE                             ``0``        Create a 2-state checkbox. This is the default.
-                 CHK_3STATE                            ``4096``      Create a 3-state checkbox. Not implemented in wxOS2 and wxGTK built against GTK+ 1.2.
-                 CHK_ALLOW_3RD_STATE_FOR_USER          ``8192``      By default a user can't set a 3-state checkbox to the third state. It can only be done from code. Using this flags allows the user to set the checkbox to the third state by clicking.
-                 ALIGN_RIGHT                            ``512``      Makes the text appear on the left of the checkbox
-              =====================================  ============  =========================================================================================================================================================================================================================
+               ============================================  ============  =========================================================================================================================================================================================================================
+                constant                                      value          description
+               ============================================  ============  =========================================================================================================================================================================================================================
+                 ``Checkbox.CHK_2STATE``                       ``0``           Create a 2-state checkbox. This is the default.
+                 ``Checkbox.CHK_3STATE``                       ``4096``        Create a 3-state checkbox. Not implemented in wxOS2 and wxGTK built against GTK+ 1.2.
+                 ``Checkbox.CHK_ALLOW_3RD_STATE_FOR_USER``     ``8192``        By default a user can't set a 3-state checkbox to the third state. It can only be done from code. Using this flags allows the user to set the checkbox to the third state by clicking.
+                 ``Checkbox.ALIGN_RIGHT``                      ``512``         Makes the text appear on the left of the checkbox
+              ===============================================  ============  =========================================================================================================================================================================================================================
 ============  ========================================================
 
 
