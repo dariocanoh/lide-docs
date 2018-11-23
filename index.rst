@@ -32,17 +32,26 @@
 
 .. toctree::
 	:hidden:
-	:caption: Hello World
+	:caption: LIDE LIBRARIES
 
-	./make_window
+	./modules/lide.http
+	./modules/lide.sql
+	./modules/lide.thread
 
 .. toctree::
 	:hidden:
-	:caption: LIDE PACKAGES
+	:caption: LUA PACKAGES
 	
 	./modules/package_manager
 	./modules/package_reference
 	./modules/list_of_packages
 
+.. toctree::
+	:hidden:
+	:caption: Hello World
+
+	./make_window
+
+	
 .. // Required values for html docs visualization
 .. include:: ./directives.rst
