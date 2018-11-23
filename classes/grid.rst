@@ -8,9 +8,7 @@
 Grid
 ========
 
-::
-
-   lide.widgets.controls.grid 1.0
+   ``[lide.widgets] ^1.1`` ``lide.widgets.controls.grid 1.0``
 
 
 .. note::
