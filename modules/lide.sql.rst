@@ -39,7 +39,7 @@ dependencies
 The following dependencies are necessary to be able to run the library:
 
 - lide 0.1
-- luasql.sqlite3_ 2.1.0
+- luasql 2.1.0
 - fbclient_ 0.5.0
 
 
@@ -60,13 +60,13 @@ Database:new
 **SQLite3:**
 
 ===========  ===========================================================
- Database_ 	  Database:new ( string sqlDriver, string sDatabase )
+ Database_ 	  Database:new ( "firebird", string sDatabase )
 ===========  ===========================================================
 
 **Firebird:**
 
 ===========  ===========================================================
- Database_ 	  Database:new ( string sqlDriver, string sDatabase, string_ username, string_ password )
+ Database_ 	  Database:new ( "sqlite3", string sDatabase, string_ username, string_ password )
 ===========  ===========================================================
 
 Database:exec
