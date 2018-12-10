@@ -1,3 +1,8 @@
+.. /////// Created 2018/12/10 3:33 - Hernan Dario Cano [dcanohdev@gmail.com]
+.. // docs/modules/lide.sql.rst 0.2.0 Released 
+.. //  lide.http reference 0.2.0 2018/12/10 3:33
+.. //   (c) 2018 Hernan Dario Cano | Lide License
+
 .. _luasql: https://github.com/lidesdk/luasql.sqlite3/blob/package.lide/README.rst
 
 lide.sql
