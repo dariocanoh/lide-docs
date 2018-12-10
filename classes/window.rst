@@ -1,6 +1,6 @@
 .. /////// 14/06/2015 - Dario Cano [thdkano@gmail.com]
-.. // classes/widgets/window.rst
-.. //  Class Window reference
+.. // classes/widgets/window.rst 1.1
+.. //  Class Window reference 1.1
 .. //   (c) 2015 Dario Cano | lide license
 
 .. _ClassWindow:
@@ -346,6 +346,46 @@ Window:setStatusBarPane
   
 ======  ==============================================================
  nil_    Window:setStatusBarPane( number_ nField )
+======  ==============================================================
+ 
+----------------------------------------------------------------------
+
+Window:raise
+^^^^^^^^^^^^
+
+  Raises the window to the top of the window hierarchy (z-order).
+
+  In current version of wxWidgets this works both for managed and 
+  child windows.
+  
+  .. note::
+
+  **See also:** Window:Lower_.
+  
+======  ==============================================================
+ nil_    Window:raise( )
+======  ==============================================================
+ 
+----------------------------------------------------------------------
+
+Window:setIcon
+^^^^^^^^^^^^^^
+
+  Set iconfile for this window.
+  
+======  ==============================================================
+ nil_    Window:setIcon( string_ sIconFile )
+======  ==============================================================
+ 
+----------------------------------------------------------------------
+
+Window:getIcon
+^^^^^^^^^^^^^^^^^^^^^^^
+
+  Get the path of iconfile for this window.
+  
+======  ==============================================================
+ nil_    Window:getIcon( )
 ======  ==============================================================
  
 ----------------------------------------------------------------------

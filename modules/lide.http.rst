@@ -6,6 +6,8 @@
 lide.http
 =========
 
+``[lide.http] ^0.2.1``
+
 The library lide.http allows us to do http / https (post, get, put, 
 head, delete, etc ...) from lua.
 
@@ -40,11 +42,29 @@ lua API
 
 Basic usage functions.
 
-http.download ( string Url, string DestPath, func downldCallback ( number Downlded, number DownldTotal, number Percent ) )
-  Download the given "url" to "dest" path to the system.
+----------------------------------------------------------------------
 
-http.test_connection ( string Url )
-  Test HTTP or HTTPS connection.
+
+http.download
+^^^^^^^^^^^^^
+
+   Download the given "url" to "dest" path to the system.
+
+======  ==============================================================
+ nil_    http.download ( string_ Url, string_ DestPath, func_ downldCallback ( number_ Downlded, number_ DownldTotal, number_ Percent )  )
+======  ==============================================================
+
+----------------------------------------------------------------------
+
+
+http.test_connection
+^^^^^^^^^^^^^^^^^^^^
+
+   Test HTTP or HTTPS connection.
+
+======  ==============================================================
+ nil_    http.test_connection ( string_ Url )
+======  ==============================================================
 
 
 ----------------------------------------------------------------------
@@ -69,39 +89,93 @@ argument or as a table.
   }
 
 
-http.get ( string Url, table requestData )
+http.get
+^^^^^^^^
+
   The GET method requests a representation of a specific resource.
   Requests that use the GET method should only retrieve data.
 
-http.head ( string Url, table requestData )
+========  ============================================================
+ table_     http.get ( string Url, table requestData )
+========  ===========================================================
+
+http.head
+^^^^^^^^^
+
   The HEAD method requests an identical response to that of a GET 
   request, but without the body of the response.
 
-http.post ( string Url, table requestData )
+========  ============================================================
+ table_     http.head ( string Url, table requestData )
+========  ============================================================
+
+http.post
+^^^^^^^^^
+
   The POST method is used to send an entity to a specific resource, 
   often causing a change in state or side effects on the server.
 
-http.put ( string Url, table requestData )
+========  ============================================================
+ table_     http.post ( string Url, table requestData )
+========  ============================================================
+
+http.put
+^^^^^^^^
+
   The PUT mode replaces all current representations of the 
   destination resource with the payload of the request.
 
-http.delete ( string Url, table requestData )
+========  ============================================================
+ table_     http.put ( string Url, table requestData )
+========  ============================================================
+
+http.delete
+^^^^^^^^^^^
+
   The DELETE method deletes a specific resource.
 
-http.connect ( string Url, table requestData )
+========  ============================================================
+ table_     http.delete ( string Url, table requestData )
+========  ============================================================
+
+http.connect
+^^^^^^^^^^^^
+
   The CONNECT method establishes a tunnel to the server identified 
   by the resource.
 
-http.options ( string Url, table requestData )
+========  ============================================================
+ table_     http.connect ( string Url, table requestData )
+========  ============================================================
+
+http.options
+^^^^^^^^^^^^
+
   The OPTIONS method is used to describe the communication options 
   for the destination resource.
 
-http.trace ( string Url, table requestData )
+========  ============================================================
+ table_     http.options ( string Url, table requestData )
+========  ============================================================
+
+http.trace
+^^^^^^^^^^
+
   The TRACE method performs a message loopback test along the route 
   to the destination resource.
 
-http.patch ( string Url, table requestData )
+========  ============================================================
+ table_     http.trace ( string Url, table requestData )
+========  ============================================================
+
+http.patch
+^^^^^^^^^^
+
   The PATCH method is used to apply partial modifications to a resource.
+
+========  ============================================================
+ table_     http.patch ( string Url, table requestData )
+========  ============================================================
 
 .. _dcanoh:  http://github.com/lidesdk/repos/dcanoh.rst>`.
 .. _ssl:     https://github.com/lidesdk/repos/blob/master/stable/ssl/readme.rst

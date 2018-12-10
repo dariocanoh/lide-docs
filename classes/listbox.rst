@@ -1,5 +1,5 @@
 .. /////// 2018/02/04 - Hernan Dario Cano [dcanohdev@gmail.com]
-.. // classes/widgets/controls/listbox.rst
+.. // classes/widgets/controls/listbox.rst 1.1
 .. //  Class Listbox reference
 .. //   (c) 2018 Hernan Dario Cano | lide license
 
