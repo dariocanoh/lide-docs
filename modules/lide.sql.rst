@@ -46,8 +46,8 @@ The following dependencies are necessary to be able to run the library:
 ----------------------------------------------------------------------
 
 
-lua API
-^^^^^^^
+Lua API
+=======
 
 Basic usage functions.
 
