@@ -14,7 +14,7 @@ Installation
 ============  ======================================================================================
  Platform      Installation
 ============  ======================================================================================
- Windows   	   Download `shell-installer_v0.2.exe < https://github.com/lidesdk/shell/releases/download/0.2/shell-installer-0.2.exe>`_.
+ Windows   	   Download `shell-installer_v0.2.exe <https://github.com/lidesdk/shell/releases/download/0.2/shell-installer-0.2.exe>`_.
  Ubuntu        ``$ sudo apt-get install lua5.1 luarocks libwxgtk2.8``
  Archlinux	   ``# pacman -S lua5.1 luarocks5.1 wxgtk2.8``
 ============  ======================================================================================
