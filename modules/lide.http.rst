@@ -185,3 +185,7 @@ http.patch
 .. _md5:     https://github.com/lidesdk/repos/blob/master/stable/md5/readme.rst
 .. _base64:  https://github.com/lidesdk/base64/readme.rst
 .. _luacurl: https://github.com/lidesdk/repos/blob/master/stable/luacurl/readme.rst
+.. _socket:  https://github.com/lidesdk/readme
+
+.. // Required values for html docs visualization
+.. include:: ../directives.rst

@@ -151,3 +151,8 @@ Database:select
 =========  ===========================================================
  nil_    	 Database:select { from = string table_name , string col1name, string col2value, ... }
 =========  ===========================================================
+
+
+
+.. // Required values for html docs visualization
+.. include:: ../directives.rst
