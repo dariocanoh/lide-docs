@@ -12,7 +12,7 @@ lide.sql
 
 ``[lide.sql] ^0.2``
 
-SQl Databases support for Lide framework.
+SQL Databases support for Lide framework.
 
 **Allow us to:**
 
@@ -44,12 +44,6 @@ The following dependencies are necessary to be able to run the library:
 
 
 ----------------------------------------------------------------------
-
-
-Lua API
-=======
-
-Basic usage functions.
 
 Database:new
 ^^^^^^^^^^^^
