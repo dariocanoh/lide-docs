@@ -62,8 +62,13 @@ Database:new
 	
 	sqldb = sql.database:new ( 'sqlite3', 'test.db' );
 
+**SQLite3**
 ===========  ===========================================================
  Database_ 	  Database:new ( string sqlDriver, string sDatabase )
+===========  ===========================================================
+**Firebird**
+===========  ===========================================================
+ Database_ 	  Database:new ( string sqlDriver, string sDatabase, string_ username, string_ password )
 ===========  ===========================================================
 
 Database:exec
