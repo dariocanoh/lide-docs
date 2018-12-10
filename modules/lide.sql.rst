@@ -3,8 +3,8 @@
 .. //  lide.http reference 0.2.0 2018/12/10 3:33
 .. //   (c) 2018 Hernan Dario Cano | Lide License
 
-.. _luasql:   https://github.com/lidesdk/luasql.sqlite3/blob/package.lide/readme.rst
-.. _fbclient: https://github.com/lidesdk/fbclient/blob/package.lide/readme.rst
+.. _luasql:   https://github.com/lidesdk/luasql.sqlite3
+.. _fbclient: https://github.com/lidesdk/fbclient
 .. _Database: ..modules/lide.sql.html#Database:new
 
 lide.sql
