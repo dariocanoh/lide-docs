@@ -3,7 +3,9 @@
 .. //  lide.http reference 0.2.0 2018/12/10 3:33
 .. //   (c) 2018 Hernan Dario Cano | Lide License
 
-.. _luasql: https://github.com/lidesdk/luasql.sqlite3/blob/package.lide/README.rst
+.. _luasql:   https://github.com/lidesdk/luasql.sqlite3/blob/package.lide/readme.rst
+.. _fbclient: https://github.com/lidesdk/fbclient/blob/package.lide/readme.rst
+.. _Database: ..modules/lide.sql.html#Database:new
 
 lide.sql
 ========
@@ -14,10 +16,9 @@ SQl Databases support for Lide framework.
 
 **Allow us to:**
 
-- lide.sql library allows us to execute queries in sql databases from 
-lua.
-- get data fron sql databases from lua
-- connect trought sqlite3 and firebird.
+- lide.sql library allows us to execute queries in sql databases from lua.
+- Get data from sql databases from lua.
+- Connect trought sqlite3 and firebird.
 
 
 ----------------------------------------------------------------------
@@ -29,21 +30,20 @@ installation
 To install this library I recommend using the command line of lide, 
 using ``lide install``.
 
-*Thus all the dependencies will be installed automatically:*
-
 ``$ lide install lide.sql``
 
 
-
 dependencies
-^^^^^^^^^^^^
+------------
 
 The following dependencies are necessary to be able to run the library:
 
 - lide 0.1
 - luasql_ 2.1.0
-- fbclient 0.5.0
+- fbclient_ 0.5.0
 
+
+----------------------------------------------------------------------
 
 
 lua API
@@ -56,12 +56,14 @@ Database:new
 	
 	Create new Database object and connect using given sql driver.
 
+	You can use "firebird" or "sqlite3" as sql database driver.
+
 .. code-block:: lua
 	
 	sqldb = sql.database:new ( 'sqlite3', 'test.db' );
 
 ===========  ===========================================================
- Database_ 	  Database:new ( string sDatabase, string sqlDriver )
+ Database_ 	  Database:new ( string sqlDriver, string sDatabase )
 ===========  ===========================================================
 
 Database:exec
