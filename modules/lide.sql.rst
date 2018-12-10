@@ -5,7 +5,7 @@
 
 .. _luasql:   https://github.com/lidesdk/luasql.sqlite3
 .. _fbclient: https://github.com/lidesdk/fbclient
-.. _Database: ..modules/lide.sql.html#Database:new
+.. _Database: #Database:new
 
 lide.sql
 ========
