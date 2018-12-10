@@ -36,12 +36,6 @@ The following dependencies are necessary to be able to run the library:
 - luacurl_ 1.1.0
 
 
-
-lua API
-^^^^^^^
-
-Basic usage functions.
-
 ----------------------------------------------------------------------
 
 
