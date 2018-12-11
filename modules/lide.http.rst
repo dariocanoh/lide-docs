@@ -26,7 +26,7 @@ dependencies
 
 The following dependencies are necessary to be able to run the library:
 
-- socket 2.0.2
+- socket_ 2.0.2
 - ssl_  0.4
 - ltn12_ 1.0.3
 - cjson_ 2.1.0
@@ -64,7 +64,7 @@ http.test_connection
 ----------------------------------------------------------------------
 
 http requests
--------------
+^^^^^^^^^^^^^
 
 The second argument of a request is a table that can be used to make 
 more advanced requests. Any request can be made with either a second 
@@ -82,6 +82,7 @@ argument or as a table.
     bool allow_redirects = true,
   }
 
+----------------------------------------------------------------------
 
 http.get
 ^^^^^^^^
@@ -90,7 +91,7 @@ http.get
   Requests that use the GET method should only retrieve data.
 
 ========  ============================================================
- table_     http.get ( string Url, table requestData )
+ table_     http.get ( string_ Url, table_ requestData )
 ========  ===========================================================
 
 http.head
@@ -100,7 +101,7 @@ http.head
   request, but without the body of the response.
 
 ========  ============================================================
- table_     http.head ( string Url, table requestData )
+ table_     http.head ( string_ Url, table_ requestData )
 ========  ============================================================
 
 http.post
@@ -110,7 +111,7 @@ http.post
   often causing a change in state or side effects on the server.
 
 ========  ============================================================
- table_     http.post ( string Url, table requestData )
+ table_     http.post ( string_ Url, table_ requestData )
 ========  ============================================================
 
 http.put
@@ -120,7 +121,7 @@ http.put
   destination resource with the payload of the request.
 
 ========  ============================================================
- table_     http.put ( string Url, table requestData )
+ table_     http.put ( string_ Url, table_ requestData )
 ========  ============================================================
 
 http.delete
@@ -129,7 +130,7 @@ http.delete
   The DELETE method deletes a specific resource.
 
 ========  ============================================================
- table_     http.delete ( string Url, table requestData )
+ table_     http.delete ( string_ Url, table_ requestData )
 ========  ============================================================
 
 http.connect
@@ -139,7 +140,7 @@ http.connect
   by the resource.
 
 ========  ============================================================
- table_     http.connect ( string Url, table requestData )
+ table_     http.connect ( string_ Url, table_ requestData )
 ========  ============================================================
 
 http.options
@@ -149,7 +150,7 @@ http.options
   for the destination resource.
 
 ========  ============================================================
- table_     http.options ( string Url, table requestData )
+ table_     http.options ( string_ Url, table_ requestData )
 ========  ============================================================
 
 http.trace
@@ -159,7 +160,7 @@ http.trace
   to the destination resource.
 
 ========  ============================================================
- table_     http.trace ( string Url, table requestData )
+ table_     http.trace ( string_ Url, table_ requestData )
 ========  ============================================================
 
 http.patch
@@ -168,18 +169,18 @@ http.patch
   The PATCH method is used to apply partial modifications to a resource.
 
 ========  ============================================================
- table_     http.patch ( string Url, table requestData )
+ table_     http.patch ( string_ Url, table_ requestData )
 ========  ============================================================
 
 .. _dcanoh:  http://github.com/lidesdk/repos/dcanoh.rst>`.
-.. _ssl:     https://github.com/lidesdk/repos/blob/master/stable/ssl/readme.rst
-.. _ltn12:   https://github.com/lidesdk/repos/blob/master/stable/ltn12/readme.rst
-.. _cjson:   https://github.com/lidesdk/repos/blob/master/stable/cjson/readme.rst
-.. _xml:     https://github.com/lidesdk/repos/blob/master/stable/xml/readme.rst
-.. _md5:     https://github.com/lidesdk/repos/blob/master/stable/md5/readme.rst
-.. _base64:  https://github.com/lidesdk/base64/readme.rst
-.. _luacurl: https://github.com/lidesdk/repos/blob/master/stable/luacurl/readme.rst
-.. _socket:  https://github.com/lidesdk/readme
+.. _ssl:     https://github.com/lidesdk/ssl
+.. _ltn12:   https://github.com/lidesdk/ltn12
+.. _cjson:   https://github.com/lidesdk/cjson
+.. _xml:     https://github.com/lidesdk/xml
+.. _md5:     https://github.com/lidesdk/md5
+.. _base64:  https://github.com/lidesdk/base64
+.. _luacurl: https://github.com/lidesdk/luacurl
+.. _socket:  https://github.com/lidesdk/socket
 
 .. // Required values for html docs visualization
 .. include:: ../directives.rst
