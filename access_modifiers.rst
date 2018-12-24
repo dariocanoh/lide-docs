@@ -21,7 +21,7 @@ private Modifier
 This switch sets the most restrictive level, since the properties or methods that declare
 as private will only be accessible from within the class.
 
-protected Modifier
+protected modifier
 ******************
 
 hese modifiers do not change the form of access or behavior, only control
@@ -36,6 +36,7 @@ A code explanation of how works Lide encapsulation:
 .. code-block:: lua
 
 	class 'Window'
+
 	function Window:Window ( fields )
 	     private {
 	        Flags = fields.Flags

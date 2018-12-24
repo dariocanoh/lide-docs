@@ -3,7 +3,7 @@ Objects and Classes on Lua
 
 
 A tutorial mode, this paper will try to explain Object Oriented model 
-proposed by Lide and adaptations made in the base language (`Lua <http://www.lua.org>`)
+proposed by Lide and adaptations made in the base language (`Lua <http://www.lua.org>`_)
 so that the programmer can design and implement their own classes or 
 even modify aspects of Lide framework.
 
@@ -25,14 +25,14 @@ Making a class
 
 Basically there are two ways to define a new class:
 
-Calling th function ``lide.class()`` or using the method ``BaseObject:subclass()``
+Calling th function ``lide.class()`` or using the method ``lide.object:subclass()``
 
 When you are creating a class must specify a name for it, this is not 
 absolutely necessary, but can be helpful at the time of debug their 
 applications. **If you do not specify the class name will be called 
 "Unnamed".**
 
-When you use ``Object:subclass()``, the new class will be directly a 
+When you use ``lide.object:subclass()``, the new class will be directly a 
 subclass of Object_ on the other hand ``lide.class()`` accepts a 
 second argument, which will be another superclass for your object if 
 you do not specify a superclass, the Object_ class will be chosen.
@@ -49,13 +49,13 @@ An example can illustrate better:
   local newClass = lide.class
 
   -- 'Human' is a subclass of 'BaseObject'
-  Human = newClass("Human")
+  Human = newClass ('Human');
   
   -- 'Engineer' is a subclass of 'Human'
-  Engineer = newclass("Engineer", Human)
+  Engineer = newclass ('Engineer', Human);
   
   -- 'Student' is another subclass of 'Human'
-  Student = Human:subclass("Student")
+  Student = Human:subclass('Student');
 
 ----------------------------------------------------------------------
 
