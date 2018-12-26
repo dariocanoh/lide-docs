@@ -14,6 +14,7 @@ lide.error
   the ``lide.error`` module we will find the necessary functions to 
   robust error handling implemented in Lua.
 
+
   .. code-block:: lua
    
    local try, catch = lide.error.try, lide.error.catch;
@@ -26,6 +27,43 @@ lide.error
       print(err);
    end 
    }};
+
+
+
+Creation and handling exceptions:
+---------------------------------
+
+It is also possible to be more precise and to find the type of error 
+we are looking for, that's what the exceptions are for.
+
+We can create new exceptions and control them with the catch function.
+
+.. code-block:: lua
+
+   local TypeError = lide.error.newException 'TypeError'
+
+   try{
+     function()
+         function foo(text)
+             if type(text) ~= 'string' then
+                TypeError '"text" It\'s not string type.'
+             end
+         end
+
+         foo(1) -- We run the function with a number as an argument for our error to propagate.
+
+     end,
+
+   catch {
+     function( err )
+         if err:isa(TypeError) then -- We use the "isa" method to compare what type of error / exception it is.
+
+            print(err.traceback)
+         end
+     end
+    }
+   }
+
 
 ----------------------------------------------------------------------
 
