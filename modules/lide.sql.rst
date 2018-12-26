@@ -3,6 +3,7 @@
 .. //  lide.http reference 0.2.0 2018/12/10 3:33
 .. //   (c) 2018 Hernan Dario Cano | Lide License
 
+.. _lide:     https://github.com/lidesdk/framework/releases/tag/0.2.0
 .. _luasql:   https://github.com/lidesdk/luasql.sqlite3
 .. _fbclient: https://github.com/lidesdk/fbclient
 .. _Database: #Database:new
@@ -38,8 +39,8 @@ dependencies
 
 The following dependencies are necessary to be able to run the library:
 
-- lide 0.1
-- luasql 2.1.0
+- lide_ 0.2.0
+- luasql_ 2.1.0
 - fbclient_ 0.5.0
 
 
@@ -147,13 +148,20 @@ Database:select
 	Fetch the data from a SQL database table which returns data in the form of a result table. 
 	These result tables are also called result sets.
 
-.. code-block:: lua
-	
-	sqll:select { from = 'lua_packages', 'package_name' }
+	**Returns:** 
+  	    "select" is an iterator, to fetch data to lua table use 
+		``sql.database:select_totable`` instead.
 
-=========  ===========================================================
- nil_    	 Database:select { from = string table_name , string col1name, string col2value, ... }
-=========  ===========================================================
+
+.. code-block:: lua
+
+	for row in sqll:select { '*'; from = 'lua_packages' } do
+	    print(row.package_name);
+	end
+
+===========  =========================================================
+ function_     Database:select { from = string table_name , string col1name, string col2value, ... }
+===========  =========================================================
 
 
 
