@@ -1,11 +1,62 @@
 Welcome
 =======
 
+Lide is an object-oriented, high-level framework for implementing
+desktop applications. Lide is based on wxWidgets so programs are 
+crossplatform and operates good with GTK+ on GNU/Linux and Native
+controls on Microsoft Windows.
 
-Lide Framework is a library that allows you to create multiplatform 
-graphical interfaces from Lua language. Lide uses wxWidgets to build 
-controls and windows, this ensures the integration of your 
-applications with GTK + on Linux and really native controls in Windows.
+Lide Framework supports inheritance, libraries and user-defined 
+classes among other features.
+
+With Lide you can create packages for lua libraries, manage packages, 
+load packages and set private repositories to ensure apps stability.
+
+Lide was influenced by npm, Python and JavaScript and is designed 
+to target Windows and GNU/Linux operating systems.
+
+
+Framework Documentation
+=======================
+
+If you are new to the concept of object oriented programming on Lua we
+recommend you start with _an example desktop app_  written in Lide. 
+
+When you are ready for more detail, we recommend you read the 
+_“Lide by Example”_ and _“Lide in Depth”_ sections to learn the core 
+concepts of the framework.
+
+For further reading, try _the basics of lua_ and details of the 
+_wxlua binding_.
+
+.. hint::
+  You can use _lide shell_ to execute lua scripts and can be your lua
+  interpreter by default.
+
+Contents
+========
+
+:ref:`Keyword Index <genindex>`
+
+.. toctree::
+   :maxdepth: 2
+
+   introduction-to-smart-contracts.rst
+   installing-solidity.rst
+   solidity-by-example.rst
+   solidity-in-depth.rst
+   security-considerations.rst
+   resources.rst
+   using-the-compiler.rst
+   metadata.rst
+   abi-spec.rst
+   yul.rst
+   style-guide.rst
+   common-patterns.rst
+   bugs.rst
+   contributing.rst
+   frequently-asked-questions.rst
+   lll.rst
 
 Installation
 ============
