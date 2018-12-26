@@ -34,7 +34,7 @@ _wxlua binding_.
   interpreter by default.
 
 Contents
-========
+--------
 
 :ref:`Keyword Index <genindex>`
 
@@ -57,6 +57,8 @@ Contents
    contributing.rst
    frequently-asked-questions.rst
    lll.rst
+
+
 
 Installation
 ============
